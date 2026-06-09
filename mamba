@@ -1,0 +1,3 @@
+export MAMBA_ROOT_PREFIX="$HOME/.local/micromamba"
+eval "$($HOME/.local/bin/micromamba shell hook -s bash)"
+micromamba activate "$PWD/.venv-linux-gpu"
