@@ -1,0 +1,48 @@
+  Downloading google_auth_oauthlib-0.8.0-py2.py3-none-any.whl.metadata (2.6 kB)
+Collecting google-auth<3,>=1.6.3 (from tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
+  Downloading google_auth-2.52.0-py3-none-any.whl.metadata (5.5 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.32->-r requirements.txt (line 10))
+  Downloading charset_normalizer-3.4.6-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting requests>=2.32 (from -r requirements.txt (line 10))
+  Downloading requests-2.34.1-py3-none-any.whl.metadata (4.8 kB)
+Collecting protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3 (from tensorflow==2.12.1->-r requirements.txt (line 12))
+  Downloading protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+Collecting gast<=0.4.0,>=0.2.1 (from tensorflow==2.12.1->-r requirements.txt (line 12))
+  Downloading gast-0.3.3-py2.py3-none-any.whl.metadata (1.1 kB)
+ERROR: Cannot install -r requirements.txt (line 12), -r requirements.txt (line 17), -r requirements.txt (line 4), -r requirements.txt (line 5) and numpy<=1.24.3 and >=1.22 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    The user requested numpy<=1.24.3 and >=1.22
+    tensorflow 2.12.1 depends on numpy<=1.24.3 and >=1.22
+    opencv-python 4.8.0.74 depends on numpy>=1.21.2; python_version >= "3.10"
+    opencv-python 4.8.0.74 depends on numpy>=1.23.5; python_version >= "3.11"
+    opencv-python 4.8.0.74 depends on numpy>=1.17.0; python_version >= "3.7"
+    opencv-python 4.8.0.74 depends on numpy>=1.17.3; python_version >= "3.8"
+    opencv-python 4.8.0.74 depends on numpy>=1.19.3; python_version >= "3.9"
+    opencv-python-headless 4.8.0.76 depends on numpy>=1.21.2; python_version >= "3.10"
+    opencv-python-headless 4.8.0.76 depends on numpy>=1.23.5; python_version >= "3.11"
+    opencv-python-headless 4.8.0.76 depends on numpy>=1.17.0; python_version >= "3.7"
+    opencv-python-headless 4.8.0.76 depends on numpy>=1.17.3; python_version >= "3.8"
+    opencv-python-headless 4.8.0.76 depends on numpy>=1.19.3; python_version >= "3.9"
+    albumentations 2.0.8 depends on numpy>=1.24.4
+
+Additionally, some packages in these conflicts have no matching distributions available for your environment:
+    numpy
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+The dependency install failed. On no-root servers, the most common cause is dlib needing
+compiler/CMake pieces that are not available in the current environment.
+
+Options:
+  1. Use the default micromamba fallback:
+       USE_MICROMAMBA_IF_NEEDED=1 bash linux-gpu/install_linux_a6000.sh
+
+  2. Skip dlib and disable the Dlib DeepFace model in your JSON:
+       INSTALL_DLIB=0 bash linux-gpu/install_linux_a6000.sh
+
+$ 
