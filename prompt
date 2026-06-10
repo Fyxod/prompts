@@ -1,9 +1,24 @@
+interns@workstation003:~/Desktop/work/fresh$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 5 (delta 4), reused 5 (delta 4), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 1.04 KiB | 75.00 KiB/s, done.
+From https://github.com/Fyxod/geometric-v1
+   63a0757..1fcc271  main       -> origin/main
+Updating 63a0757..1fcc271
+Fast-forward
+ linux-gpu/Readme.md             |  2 ++
+ linux-gpu/constraints-a6000.txt | 30 ++++++++++++++++++++++++++++++
+ 2 files changed, 32 insertions(+)
+interns@workstation003:~/Desktop/work/fresh$ git pull
+Already up to date.
 interns@workstation003:~/Desktop/work/fresh$ bash linux-gpu/install_linux_a6000.sh 
 
-[09:52:46] Repository root: /home/interns/Desktop/work/fresh
+[10:06:33] Repository root: /home/interns/Desktop/work/fresh
 
-[09:52:46] Checking NVIDIA visibility
-Wed Jun 10 09:52:46 2026       
+[10:06:33] Checking NVIDIA visibility
+Wed Jun 10 10:06:33 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 550.107.02             Driver Version: 550.107.02     CUDA Version: 12.4     |
 |-----------------------------------------+------------------------+----------------------+
@@ -12,11 +27,11 @@ Wed Jun 10 09:52:46 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA RTX A6000               Off |   00000000:05:00.0 Off |                  Off |
-| 30%   36C    P8             16W /  300W |      78MiB /  49140MiB |      0%      Default |
+| 30%   36C    P8             15W /  300W |      78MiB /  49140MiB |      0%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 |   1  Quadro P400                    Off |   00000000:9E:00.0 Off |                  N/A |
-| 34%   35C    P8             N/A /  N/A  |       7MiB /   2048MiB |      0%      Default |
+| 34%   36C    P8             N/A /  N/A  |       7MiB /   2048MiB |      0%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
                                                                                          
@@ -33,178 +48,58 @@ Wed Jun 10 09:52:46 2026
 |    1   N/A  N/A      1798      G   /usr/lib/xorg/Xorg                              4MiB |
 +-----------------------------------------------------------------------------------------+
 
-[09:52:46] Python 3.11 was not found. Creating a no-root micromamba Python 3.11 environment.
+[10:06:33] Python 3.11 was not found. Creating a no-root micromamba Python 3.11 environment.
 
-[09:52:46] Creating local micromamba environment: /home/interns/Desktop/work/fresh/.venv-linux-gpu
-Using Cached Shard Index for conda-forge/linux-64                                                   ✔ Done
-Using Cached Shard Index for conda-forge/noarch                                                     ✔ Done
-Fetching and Parsing Packages' Shards                                                     ✔ Done (0.3 sec)
+[10:06:33] Using existing environment: /home/interns/Desktop/work/fresh/.venv-linux-gpu
 
-Resolving Environment                                                                     ✔ Done (0.2 sec)
-
-Transaction
-
-  Prefix: /home/interns/Desktop/work/fresh/.venv-linux-gpu
-
-  Updating specs:
-
-   - python=3.11
-   - pip
-   - setuptools
-   - wheel
-
-
-  Package               Version  Build                 Channel           Size
-───────────────────────────────────────────────────────────────────────────────
-  Install:
-───────────────────────────────────────────────────────────────────────────────
-
-  + _openmp_mutex           4.5  20_gnu                conda-forge     Cached
-  + bzip2                 1.0.8  hda65f42_9            conda-forge     Cached
-  + ca-certificates   2026.5.20  hbd8a1cb_0            conda-forge     Cached
-  + ld_impl_linux-64     2.45.1  default_hbd61a6d_102  conda-forge     Cached
-  + libexpat              2.8.1  hecca717_0            conda-forge     Cached
-  + libffi                3.5.2  h3435931_0            conda-forge     Cached
-  + libgcc               15.2.0  he0feb66_19           conda-forge     Cached
-  + libgcc-ng            15.2.0  h69a702a_19           conda-forge     Cached
-  + libgomp              15.2.0  he0feb66_19           conda-forge     Cached
-  + liblzma               5.8.3  hb03c661_0            conda-forge     Cached
-  + libnsl                2.0.1  hb9d3cd8_1            conda-forge     Cached
-  + libsqlite            3.53.2  h0c1763c_0            conda-forge     Cached
-  + libuuid              2.42.1  h5347b49_0            conda-forge     Cached
-  + libxcrypt            4.4.36  hd590300_1            conda-forge     Cached
-  + libzlib               1.3.2  h25fd6f3_2            conda-forge     Cached
-  + ncurses                 6.6  hdb14827_0            conda-forge     Cached
-  + openssl               3.6.2  h35e630c_0            conda-forge     Cached
-  + packaging              26.2  pyhc364b38_0          conda-forge     Cached
-  + pip                  26.1.2  pyh8b19718_0          conda-forge     Cached
-  + python              3.11.15  hd63d673_0_cpython    conda-forge     Cached
-  + readline                8.3  h853b02a_0            conda-forge     Cached
-  + setuptools           82.0.1  pyh332efcf_0          conda-forge     Cached
-  + tk                   8.6.13  noxft_h366c992_103    conda-forge     Cached
-  + tzdata                2025c  hc9c84f9_1            conda-forge     Cached
-  + wheel                0.47.0  pyhd8ed1ab_0          conda-forge     Cached
-  + zstd                  1.5.7  hb78ec9c_6            conda-forge     Cached
-
-  Summary:
-
-  Install: 26 packages
-
-  Total download: 0 B
-
-───────────────────────────────────────────────────────────────────────────────
-
-
-
-Transaction starting
-Linking libzlib-1.3.2-h25fd6f3_2
-Linking libgomp-15.2.0-he0feb66_19
-Linking zstd-1.5.7-hb78ec9c_6
-Linking _openmp_mutex-4.5-20_gnu
-Linking ld_impl_linux-64-2.45.1-default_hbd61a6d_102
-Linking libgcc-15.2.0-he0feb66_19
-Linking libffi-3.5.2-h3435931_0
-Linking libsqlite-3.53.2-h0c1763c_0
-Linking tk-8.6.13-noxft_h366c992_103
-Linking bzip2-1.0.8-hda65f42_9
-Linking libnsl-2.0.1-hb9d3cd8_1
-Linking libexpat-2.8.1-hecca717_0
-Linking libuuid-2.42.1-h5347b49_0
-Linking libgcc-ng-15.2.0-h69a702a_19
-Linking liblzma-5.8.3-hb03c661_0
-Linking ncurses-6.6-hdb14827_0
-Linking libxcrypt-4.4.36-hd590300_1
-Linking readline-8.3-h853b02a_0
-Linking tzdata-2025c-hc9c84f9_1
-Linking ca-certificates-2026.5.20-hbd8a1cb_0
-Linking openssl-3.6.2-h35e630c_0
-Linking python-3.11.15-hd63d673_0_cpython
-Linking packaging-26.2-pyhc364b38_0
-Linking setuptools-82.0.1-pyh332efcf_0
-Linking wheel-0.47.0-pyhd8ed1ab_0
-Linking pip-26.1.2-pyh8b19718_0
-
-Transaction finished
-
-
-To activate this environment, use:
-
-    micromamba activate /home/interns/Desktop/work/fresh/.venv-linux-gpu
-
-Or to execute a single command in this environment, use:
-
-    micromamba run -p /home/interns/Desktop/work/fresh/.venv-linux-gpu mycommand
-
-
-[09:52:54] Upgrading pip tooling
+[10:06:33] Upgrading pip tooling
 Requirement already satisfied: pip in ./.venv-linux-gpu/lib/python3.11/site-packages (26.1.2)
 Requirement already satisfied: setuptools in ./.venv-linux-gpu/lib/python3.11/site-packages (82.0.1)
 Requirement already satisfied: wheel in ./.venv-linux-gpu/lib/python3.11/site-packages (0.47.0)
 Requirement already satisfied: packaging>=24.0 in ./.venv-linux-gpu/lib/python3.11/site-packages (from wheel) (26.2)
 
-[09:52:56] Installing PyTorch CUDA wheel set with pip: cu118
+[10:06:35] Installing PyTorch CUDA wheel set with pip: cu118
 Looking in indexes: https://download.pytorch.org/whl/cu118
-Collecting torch
-  Using cached torch-2.7.1%2Bcu118-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (28 kB)
-Collecting torchvision
-  Using cached torchvision-0.22.1%2Bcu118-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (6.1 kB)
-Collecting torchaudio
-  Using cached torchaudio-2.7.1%2Bcu118-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (6.6 kB)
-Collecting filelock (from torch)
-  Using cached filelock-3.29.0-py3-none-any.whl.metadata (2.0 kB)
-Collecting nvidia-cuda-nvrtc-cu11==11.8.89 (from torch)
-  Using cached nvidia_cuda_nvrtc_cu11-11.8.89-py3-none-manylinux1_x86_64.whl (23.2 MB)
-Collecting nvidia-cuda-runtime-cu11==11.8.89 (from torch)
-Collecting nvidia-cublas-cu11==11.11.3.6 (from torch)
-  Using cached nvidia_cublas_cu11-11.11.3.6-py3-none-manylinux1_x86_64.whl (417.9 MB)
-Collecting nvidia-cufft-cu11==10.9.0.58 (from torch)
-  Using cached nvidia_cufft_cu11-10.9.0.58-py3-none-manylinux1_x86_64.whl (168.4 MB)
-  Using cached nvidia_cusparse_cu11-11.7.5.86-py3-none-manylinux1_x86_64.whl (204.1 MB)
-Collecting nvidia-nccl-cu11==2.21.5 (from torch)
-  Using cached nvidia_nccl_cu11-2.21.5-py3-none-manylinux2014_x86_64.whl (147.8 MB)
-Collecting nvidia-nvtx-cu11==11.8.86 (from torch)
-  Using cached nvidia_nvtx_cu11-11.8.86-py3-none-manylinux1_x86_64.whl (99 kB)
-Collecting triton==3.3.1 (from torch)
-  Using cached triton-3.3.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.5 kB)
+Requirement already satisfied: torch in ./.venv-linux-gpu/lib/python3.11/site-packages (2.7.1+cu118)
+Requirement already satisfied: torchvision in ./.venv-linux-gpu/lib/python3.11/site-packages (0.22.1+cu118)
+Requirement already satisfied: torchaudio in ./.venv-linux-gpu/lib/python3.11/site-packages (2.7.1+cu118)
+Requirement already satisfied: filelock in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (3.29.0)
+Requirement already satisfied: typing-extensions>=4.10.0 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (4.15.0)
+Requirement already satisfied: sympy>=1.13.3 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (1.14.0)
+Requirement already satisfied: networkx in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (3.6.1)
+Requirement already satisfied: jinja2 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (3.1.6)
+Requirement already satisfied: fsspec in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (2026.4.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.8.89 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (11.8.89)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.8.89 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (11.8.89)
+Requirement already satisfied: nvidia-cuda-cupti-cu11==11.8.87 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (11.8.87)
+Requirement already satisfied: nvidia-cudnn-cu11==9.1.0.70 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (9.1.0.70)
+Requirement already satisfied: nvidia-cublas-cu11==11.11.3.6 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (11.11.3.6)
+Requirement already satisfied: nvidia-cufft-cu11==10.9.0.58 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (10.9.0.58)
+Requirement already satisfied: nvidia-curand-cu11==10.3.0.86 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (10.3.0.86)
+Requirement already satisfied: nvidia-cusolver-cu11==11.4.1.48 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (11.4.1.48)
+Requirement already satisfied: nvidia-cusparse-cu11==11.7.5.86 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (11.7.5.86)
+Requirement already satisfied: nvidia-nccl-cu11==2.21.5 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (2.21.5)
+Requirement already satisfied: nvidia-nvtx-cu11==11.8.86 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (11.8.86)
+Requirement already satisfied: triton==3.3.1 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torch) (3.3.1)
 Requirement already satisfied: setuptools>=40.8.0 in ./.venv-linux-gpu/lib/python3.11/site-packages (from triton==3.3.1->torch) (82.0.1)
-Collecting numpy (from torchvision)
-  Using cached numpy-2.4.4-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
-Collecting pillow!=8.3.*,>=5.3.0 (from torchvision)
-  Using cached pillow-12.2.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
-Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch)
-  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
-Collecting MarkupSafe>=2.0 (from jinja2->torch)
-  Using cached markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
-Using cached torch-2.7.1%2Bcu118-cp311-cp311-manylinux_2_28_x86_64.whl (905.3 MB)
-Using cached triton-3.3.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (155.7 MB)
-Using cached torchvision-0.22.1%2Bcu118-cp311-cp311-manylinux_2_28_x86_64.whl (6.7 MB)
-Using cached torchaudio-2.7.1%2Bcu118-cp311-cp311-manylinux_2_28_x86_64.whl (3.3 MB)
-Using cached pillow-12.2.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
-Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
-Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
-Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
-Using cached filelock-3.29.0-py3-none-any.whl (39 kB)
-Using cached fsspec-2026.4.0-py3-none-any.whl (203 kB)
-Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
-Using cached markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
-Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
-Using cached numpy-2.4.4-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
-Installing collected packages: mpmath, typing-extensions, triton, sympy, pillow, nvidia-nvtx-cu11, nvidia-nccl-cu11, nvidia-cusparse-cu11, nvidia-curand-cu11, nvidia-cufft-cu11, nvidia-cuda-runtime-cu11, nvidia-cuda-nvrtc-cu11, nvidia-cuda-cupti-cu11, nvidia-cublas-cu11, numpy, networkx, MarkupSafe, fsspec, filelock, nvidia-cusolver-cu11, nvidia-cudnn-cu11, jinja2, torch, torchvision, torchaudio
-Successfully installed MarkupSafe-3.0.3 filelock-3.29.0 fsspec-2026.4.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 numpy-2.4.4 nvidia-cublas-cu11-11.11.3.6 nvidia-cuda-cupti-cu11-11.8.87 nvidia-cuda-nvrtc-cu11-11.8.89 nvidia-cuda-runtime-cu11-11.8.89 nvidia-cudnn-cu11-9.1.0.70 nvidia-cufft-cu11-10.9.0.58 nvidia-curand-cu11-10.3.0.86 nvidia-cusolver-cu11-11.4.1.48 nvidia-cusparse-cu11-11.7.5.86 nvidia-nccl-cu11-2.21.5 nvidia-nvtx-cu11-11.8.86 pillow-12.2.0 sympy-1.14.0 torch-2.7.1+cu118 torchaudio-2.7.1+cu118 torchvision-0.22.1+cu118 triton-3.3.1 typing-extensions-4.15.0
+Requirement already satisfied: numpy in ./.venv-linux-gpu/lib/python3.11/site-packages (from torchvision) (2.4.4)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in ./.venv-linux-gpu/lib/python3.11/site-packages (from torchvision) (12.2.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./.venv-linux-gpu/lib/python3.11/site-packages (from sympy>=1.13.3->torch) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./.venv-linux-gpu/lib/python3.11/site-packages (from jinja2->torch) (3.0.3)
 
-[09:55:45] Installing core project requirements with pip
+[10:06:36] Installing core project requirements with pip
 
-[09:55:46] Protecting installed PyTorch packages while resolving project requirements
+[10:06:36] Protecting installed PyTorch packages while resolving project requirements
 torch==2.7.1+cu118
 torchvision==0.22.1+cu118
 torchaudio==2.7.1+cu118
 
-[09:55:46] Using Linux GPU dependency constraints: linux-gpu/constraints-a6000.txt
+[10:06:36] Using Linux GPU dependency constraints: linux-gpu/constraints-a6000.txt
 Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu118
 Collecting diffusers @ git+https://github.com/huggingface/diffusers.git (from -r requirements.txt (line 6))
-  Cloning https://github.com/huggingface/diffusers.git to /tmp/pip-install-33o9zfe4/diffusers_4955a22c29a342008aa982586eee901a
-  Running command git clone --filter=blob:none --quiet https://github.com/huggingface/diffusers.git /tmp/pip-install-33o9zfe4/diffusers_4955a22c29a342008aa982586eee901a
-  Resolved https://github.com/huggingface/diffusers.git to commit 0d56193cd1bf5025776e8f2f71d09ceca1a69cf7
+  Cloning https://github.com/huggingface/diffusers.git to /tmp/pip-install-3hpo0uf8/diffusers_5b8d41cb59954ec3ac0d65190dd2fccb
+  Running command git clone --filter=blob:none --quiet https://github.com/huggingface/diffusers.git /tmp/pip-install-3hpo0uf8/diffusers_5b8d41cb59954ec3ac0d65190dd2fccb
+  Resolved https://github.com/huggingface/diffusers.git to commit f8090807648bdcd8a5a9e0e28528e4ce10bc277b
   Installing build dependencies ... done
   Getting requirements to build wheel ... done
   Preparing metadata (pyproject.toml) ... done
@@ -215,6 +110,16 @@ Collecting scipy>=1.10 (from -r requirements.txt (line 3))
   Using cached scipy-1.10.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (58 kB)
 Collecting opencv-python<4.9,>=4.8 (from -r requirements.txt (line 4))
   Using cached opencv_python-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (19 kB)
+Collecting opencv-python-headless<4.9,>=4.8 (from -r requirements.txt (line 5))
+  Using cached opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (19 kB)
+Collecting transformers>=4.41 (from -r requirements.txt (line 7))
+  Using cached transformers-4.57.6-py3-none-any.whl.metadata (43 kB)
+Collecting accelerate>=0.30 (from -r requirements.txt (line 8))
+  Using cached accelerate-1.13.0-py3-none-any.whl.metadata (19 kB)
+Collecting safetensors>=0.4 (from -r requirements.txt (line 9))
+  Using cached safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Collecting requests>=2.32 (from -r requirements.txt (line 10))
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
 Collecting deepface>=0.0.93 (from -r requirements.txt (line 11))
   Using cached deepface-0.0.100-py3-none-any.whl.metadata (33 kB)
 Collecting tensorflow==2.12.1 (from -r requirements.txt (line 12))
@@ -243,7 +148,7 @@ Collecting gast<=0.4.0,>=0.2.1 (from tensorflow==2.12.1->-r requirements.txt (li
 Collecting google-pasta>=0.1.1 (from tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
 Collecting grpcio<2.0,>=1.24.3 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached grpcio-1.81.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
+  Using cached grpcio-1.74.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.8 kB)
 Collecting h5py>=2.9.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached h5py-3.16.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
 Collecting jax>=0.3.15 (from tensorflow==2.12.1->-r requirements.txt (line 12))
@@ -276,14 +181,6 @@ Collecting PyYAML (from albumentations==1.3.1->-r requirements.txt (line 14))
   Using cached pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
 Collecting qudida>=0.0.4 (from albumentations==1.3.1->-r requirements.txt (line 14))
   Using cached qudida-0.0.4-py3-none-any.whl.metadata (1.5 kB)
-INFO: pip is looking at multiple versions of grpcio to determine which version is compatible with other requirements. This could take a while.
-Collecting grpcio<2.0,>=1.24.3 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached grpcio-1.80.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
-  Using cached grpcio-1.78.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
-  Using cached grpcio-1.76.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
-  Using cached grpcio-1.75.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
-  Using cached grpcio-1.75.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
-  Using cached grpcio-1.74.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.8 kB)
 Collecting anyio (from httpx<1.0.0->diffusers @ git+https://github.com/huggingface/diffusers.git->-r requirements.txt (line 6))
   Using cached anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
 Collecting certifi (from httpx<1.0.0->diffusers @ git+https://github.com/huggingface/diffusers.git->-r requirements.txt (line 6))
@@ -328,7 +225,7 @@ Requirement already satisfied: torch>=2.0.0 in ./.venv-linux-gpu/lib/python3.11/
 Collecting pandas>=0.23.4 (from deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached pandas-2.3.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
 Collecting gdown>=3.10.1 (from deepface>=0.0.93->-r requirements.txt (line 11))
-  Using cached gdown-6.1.0-py3-none-any.whl.metadata (8.3 kB)
+  Using cached gdown-5.2.2-py3-none-any.whl.metadata (5.8 kB)
 Collecting Flask>=1.1.2 (from deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
 Collecting flask-cors>=4.0.1 (from deepface>=0.0.93->-r requirements.txt (line 11))
@@ -390,41 +287,26 @@ Collecting imageio>=2.27 (from scikit-image>=0.16.1->albumentations==1.3.1->-r r
 Collecting tifffile>=2022.8.12 (from scikit-image>=0.16.1->albumentations==1.3.1->-r requirements.txt (line 14))
   Using cached tifffile-2026.3.3-py3-none-any.whl.metadata (31 kB)
 Collecting PyWavelets>=1.1.1 (from scikit-image>=0.16.1->albumentations==1.3.1->-r requirements.txt (line 14))
-  Using cached pywavelets-1.9.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (7.6 kB)
+  Using cached pywavelets-1.8.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.0 kB)
 Collecting lazy_loader>=0.2 (from scikit-image>=0.16.1->albumentations==1.3.1->-r requirements.txt (line 14))
   Using cached lazy_loader-0.5-py3-none-any.whl.metadata (5.9 kB)
-INFO: pip is looking at multiple versions of pywavelets to determine which version is compatible with other requirements. This could take a while.
-Collecting PyWavelets>=1.1.1 (from scikit-image>=0.16.1->albumentations==1.3.1->-r requirements.txt (line 14))
-  Using cached pywavelets-1.8.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.0 kB)
 Collecting threadpoolctl>=2.0.0 (from scikit-learn>=0.19.1->qudida>=0.0.4->albumentations==1.3.1->-r requirements.txt (line 14))
   Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
 Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./.venv-linux-gpu/lib/python3.11/site-packages (from sympy->lightdsa>=0.0.3->deepface>=0.0.93->-r requirements.txt (line 11)) (1.3.0)
 INFO: pip is looking at multiple versions of torch to determine which version is compatible with other requirements. This could take a while.
-Collecting gdown>=3.10.1 (from deepface>=0.0.93->-r requirements.txt (line 11))
-  Using cached gdown-6.0.0-py3-none-any.whl.metadata (7.4 kB)
-  Using cached gdown-5.2.2-py3-none-any.whl.metadata (5.8 kB)
-Collecting termcolor>=1.1.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached termcolor-3.2.0-py3-none-any.whl.metadata (6.4 kB)
-Collecting tensorflow-io-gcs-filesystem>=0.23.1 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached tensorflow_io_gcs_filesystem-0.37.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (14 kB)
 Collecting mpmath<1.4,>=1.1.0 (from sympy->lightdsa>=0.0.3->deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
 Collecting sympy (from lightdsa>=0.0.3->deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
-INFO: pip is still looking at multiple versions of torch to determine which version is compatible with other requirements. This could take a while.
 Collecting setuptools (from tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached setuptools-82.0.1-py3-none-any.whl.metadata (6.5 kB)
 Collecting networkx>=2.8 (from scikit-image>=0.16.1->albumentations==1.3.1->-r requirements.txt (line 14))
   Using cached networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
-Collecting lazy_loader>=0.2 (from scikit-image>=0.16.1->albumentations==1.3.1->-r requirements.txt (line 14))
-  Using cached lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
-Collecting imageio>=2.27 (from scikit-image>=0.16.1->albumentations==1.3.1->-r requirements.txt (line 14))
-  Using cached imageio-2.37.2-py3-none-any.whl.metadata (9.7 kB)
-INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
 Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<1.1,>=0.5->tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached oauthlib-3.3.0-py3-none-any.whl.metadata (7.9 kB)
 Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<1.1,>=0.5->tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached requests_oauthlib-1.3.1-py2.py3-none-any.whl.metadata (10 kB)
+INFO: pip is still looking at multiple versions of torch to determine which version is compatible with other requirements. This could take a while.
 Collecting regex!=2019.12.17 (from diffusers @ git+https://github.com/huggingface/diffusers.git->-r requirements.txt (line 6))
   Using cached regex-2026.4.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
 Collecting PyYAML (from albumentations==1.3.1->-r requirements.txt (line 14))
@@ -435,14 +317,13 @@ Collecting python-dotenv>=1.0.1 (from deepface>=0.0.93->-r requirements.txt (lin
   Using cached python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
 Collecting python-dateutil>=2.8.2 (from pandas>=0.23.4->deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached python_dateutil-2.9.0-py2.py3-none-any.whl.metadata (8.3 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
 Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached pyasn1-0.6.2-py3-none-any.whl.metadata (8.4 kB)
 Collecting pyasn1-modules>=0.2.1 (from google-auth<3,>=1.6.3->tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached pyasn1_modules-0.4.1-py3-none-any.whl.metadata (3.5 kB)
 Collecting packaging (from tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
-Collecting opt-einsum>=2.3.2 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached opt_einsum-3.3.0-py3-none-any.whl.metadata (6.5 kB)
 Collecting lz4>=4.3.3 (from mtcnn>=0.1.0->deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached lz4-4.4.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.8 kB)
 Collecting joblib>=1.4.2 (from mtcnn>=0.1.0->deepface>=0.0.93->-r requirements.txt (line 11))
@@ -451,158 +332,105 @@ Collecting markupsafe>=2.1.1 (from Flask>=1.1.2->deepface>=0.0.93->-r requiremen
   Using cached markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
 Collecting markdown>=2.6.8 (from tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached markdown-3.10.1-py3-none-any.whl.metadata (5.1 kB)
-Collecting lightecc (from lightdsa>=0.0.3->deepface>=0.0.93->-r requirements.txt (line 11))
-  Using cached lightecc-0.0.6-py3-none-any.whl.metadata (14 kB)
-Collecting lightphe>=0.0.15 (from deepface>=0.0.93->-r requirements.txt (line 11))
-  Using cached lightphe-0.0.24-py3-none-any.whl.metadata (14 kB)
-Collecting libclang>=13.0.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached libclang-17.0.6-py2.py3-none-manylinux2010_x86_64.whl.metadata (5.2 kB)
 Collecting jinja2>=3.1.2 (from Flask>=1.1.2->deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
-Collecting h5py>=2.9.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached h5py-3.15.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.0 kB)
-Collecting gunicorn>=20.1.0 (from deepface>=0.0.93->-r requirements.txt (line 11))
-  Using cached gunicorn-25.3.0-py3-none-any.whl.metadata (5.5 kB)
-Collecting google-pasta>=0.1.1 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached google_pasta-0.1.8-py3-none-any.whl.metadata (690 bytes)
 Collecting fsspec>=2023.5.0 (from huggingface-hub<2.0,>=0.34.0->diffusers @ git+https://github.com/huggingface/diffusers.git->-r requirements.txt (line 6))
   Using cached fsspec-2026.4.0-py3-none-any.whl.metadata (10 kB)
-Collecting flatbuffers>=2.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached flatbuffers-25.9.23-py2.py3-none-any.whl.metadata (875 bytes)
 Collecting flask-cors>=4.0.1 (from deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached flask_cors-6.0.3-py3-none-any.whl.metadata (5.3 kB)
 Collecting click>=8.1.3 (from Flask>=1.1.2->deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached click-8.4.0-py3-none-any.whl.metadata (2.6 kB)
 Collecting Flask>=1.1.2 (from deepface>=0.0.93->-r requirements.txt (line 11))
   Using cached flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
-Collecting fire>=0.4.0 (from deepface>=0.0.93->-r requirements.txt (line 11))
-  Using cached fire-0.7.0.tar.gz (87 kB)
-  Installing build dependencies ... done
-  Getting requirements to build wheel ... done
-  Preparing metadata (pyproject.toml) ... done
 Collecting cryptography>=38.0.3 (from google-auth<3,>=1.6.3->tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached cryptography-48.0.0-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.3 kB)
 Collecting certifi (from httpx<1.0.0->diffusers @ git+https://github.com/huggingface/diffusers.git->-r requirements.txt (line 6))
   Using cached certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
 Collecting wheel>=0.26 (from tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
   Using cached wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)
-Collecting six>=1.12.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
-Collecting astunparse>=1.6.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached astunparse-1.6.2-py2.py3-none-any.whl.metadata (4.4 kB)
-Collecting absl-py>=1.0.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached absl_py-2.3.1-py3-none-any.whl.metadata (3.3 kB)
 Collecting pillow>=10.0 (from -r requirements.txt (line 2))
   Using cached pillow-12.2.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
-Collecting wrapt<1.15,>=1.11.0 (from tensorflow==2.12.1->-r requirements.txt (line 12))
-  Using cached wrapt-1.14.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.7 kB)
-  Using cached wrapt-1.14.0.tar.gz (50 kB)
-  Installing build dependencies ... done
-  Getting requirements to build wheel ... done
-  Preparing metadata (pyproject.toml) ... done
-  Using cached wrapt-1.13.3.tar.gz (48 kB)
-  Installing build dependencies ... done
-  Getting requirements to build wheel ... done
-  Preparing metadata (pyproject.toml) ... error
-  error: subprocess-exited-with-error
-  
-  × Preparing metadata (pyproject.toml) did not run successfully.
-  │ exit code: 1
-  ╰─> [84 lines of output]
-      Traceback (most recent call last):
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/expand.py", line 71, in __getattr__
-          return next(
-                 ^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/expand.py", line 72, in <genexpr>
-          ast.literal_eval(value)
-        File "/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/ast.py", line 110, in literal_eval
-          return _convert(node_or_string)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/ast.py", line 109, in _convert
-          return _convert_signed_num(node)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/ast.py", line 83, in _convert_signed_num
-          return _convert_num(node)
-                 ^^^^^^^^^^^^^^^^^^
-        File "/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/ast.py", line 74, in _convert_num
-          _raise_malformed_node(node)
-        File "/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/ast.py", line 71, in _raise_malformed_node
-          raise ValueError(msg + f': {node!r}')
-      ValueError: malformed node or string on line 2: <ast.Call object at 0x7de846341990>
-      
-      The above exception was the direct cause of the following exception:
-      
-      Traceback (most recent call last):
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/expand.py", line 185, in read_attr
-          value = getattr(StaticModule(module_name, spec), attr_name)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/expand.py", line 77, in __getattr__
-          raise AttributeError(f"{self.name} has no attribute {attr}") from e
-      AttributeError: wrapt has no attribute __version__
-      
-      During handling of the above exception, another exception occurred:
-      
-      Traceback (most recent call last):
-        File "/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
-          main()
-        File "/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
-          json_out["return_val"] = hook(**hook_input["kwargs"])
-                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
-          return hook(metadata_directory, config_settings)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 380, in prepare_metadata_for_build_wheel
-          self.run_setup()
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 520, in run_setup
-          super().run_setup(setup_script=setup_script)
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 317, in run_setup
-          exec(code, locals())
-        File "<string>", line 41, in <module>
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/__init__.py", line 117, in setup
-          return distutils.core.setup(**attrs)  # type: ignore[return-value]
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/_distutils/core.py", line 160, in setup
-          dist.parse_config_files()
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/dist.py", line 758, in parse_config_files
-          setupcfg.parse_configuration(
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/setupcfg.py", line 189, in parse_configuration
-          meta.parse()
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/setupcfg.py", line 504, in parse
-          section_parser_method(section_options)
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/setupcfg.py", line 479, in parse_section
-          self[name] = value
-          ~~~~^^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/setupcfg.py", line 296, in __setitem__
-          parsed = self.parsers.get(option_name, lambda x: x)(value)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/setupcfg.py", line 602, in _parse_version
-          return expand.version(self._parse_attr(value, self.package_dir, self.root_dir))
-                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/setupcfg.py", line 421, in _parse_attr
-          return expand.read_attr(attr_desc, package_dir, root_dir)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/expand.py", line 190, in read_attr
-          module = _load_spec(spec, module_name)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-8g3tp3fz/overlay/lib/python3.11/site-packages/setuptools/config/expand.py", line 211, in _load_spec
-          spec.loader.exec_module(module)
-        File "<frozen importlib._bootstrap_external>", line 940, in exec_module
-        File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-        File "/tmp/pip-install-33o9zfe4/wrapt_5c863d33460f48ab955aae07c48af1c0/src/wrapt/__init__.py", line 10, in <module>
-          from .decorators import (adapter_factory, AdapterFactory, decorator,
-        File "/tmp/pip-install-33o9zfe4/wrapt_5c863d33460f48ab955aae07c48af1c0/src/wrapt/decorators.py", line 34, in <module>
-          from inspect import ismethod, isclass, formatargspec
-      ImportError: cannot import name 'formatargspec' from 'inspect' (/home/interns/Desktop/work/fresh/.venv-linux-gpu/lib/python3.11/inspect.py)
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-error: metadata-generation-failed
+Collecting urllib3<3,>=1.26 (from requests>=2.32->-r requirements.txt (line 10))
+  Using cached urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+  Downloading urllib3-2.6.2-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-2.6.1-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-2.6.0-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+  Downloading urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
+  Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+  Downloading urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+  Downloading urllib3-2.2.1-py3-none-any.whl.metadata (6.4 kB)
+  Downloading urllib3-2.2.0-py3-none-any.whl.metadata (6.4 kB)
+  Downloading urllib3-2.1.0-py3-none-any.whl.metadata (6.4 kB)
+  Downloading urllib3-2.0.7-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-2.0.6-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-2.0.5-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-2.0.4-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-2.0.3-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-2.0.2-py3-none-any.whl.metadata (6.6 kB)
+  Downloading urllib3-1.26.20-py2.py3-none-any.whl.metadata (50 kB)
+  Downloading urllib3-1.26.19-py2.py3-none-any.whl.metadata (49 kB)
+  Downloading urllib3-1.26.18-py2.py3-none-any.whl.metadata (48 kB)
+  Downloading urllib3-1.26.17-py2.py3-none-any.whl.metadata (48 kB)
+  Downloading urllib3-1.26.16-py2.py3-none-any.whl.metadata (48 kB)
+  Downloading urllib3-1.26.15-py2.py3-none-any.whl.metadata (48 kB)
+  Downloading urllib3-1.26.14-py2.py3-none-any.whl.metadata (47 kB)
+  Downloading urllib3-1.26.13-py2.py3-none-any.whl (140 kB)
+  Downloading urllib3-1.26.12-py2.py3-none-any.whl.metadata (47 kB)
+  Downloading urllib3-1.26.11-py2.py3-none-any.whl.metadata (46 kB)
+  Downloading urllib3-1.26.10-py2.py3-none-any.whl.metadata (46 kB)
+  Downloading urllib3-1.26.9-py2.py3-none-any.whl.metadata (46 kB)
+  Downloading urllib3-1.26.8-py2.py3-none-any.whl.metadata (45 kB)
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl.metadata (44 kB)
+  Downloading urllib3-1.26.6-py2.py3-none-any.whl.metadata (44 kB)
+  Downloading urllib3-1.26.5-py2.py3-none-any.whl.metadata (43 kB)
+  Downloading urllib3-1.26.4-py2.py3-none-any.whl.metadata (43 kB)
+  Downloading urllib3-1.26.3-py2.py3-none-any.whl.metadata (43 kB)
+  Downloading urllib3-1.26.2-py2.py3-none-any.whl.metadata (42 kB)
+  Downloading urllib3-1.26.1-py2.py3-none-any.whl.metadata (42 kB)
+  Downloading urllib3-1.26.0-py2.py3-none-any.whl.metadata (42 kB)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
+  Using cached tensorboard_data_server-0.7.1-py3-none-manylinux2014_x86_64.whl.metadata (1.1 kB)
+  Downloading tensorboard_data_server-0.7.0-py3-none-manylinux2014_x86_64.whl.metadata (1.1 kB)
+Collecting idna (from httpx<1.0.0->diffusers @ git+https://github.com/huggingface/diffusers.git->-r requirements.txt (line 6))
+  Using cached idna-3.17-py3-none-any.whl.metadata (6.4 kB)
+  Downloading idna-3.16-py3-none-any.whl.metadata (6.4 kB)
+  Downloading idna-3.15-py3-none-any.whl.metadata (7.7 kB)
+  Downloading idna-3.14-py3-none-any.whl.metadata (8.0 kB)
+  Downloading idna-3.13-py3-none-any.whl.metadata (8.0 kB)
+  Downloading idna-3.12-py3-none-any.whl.metadata (8.0 kB)
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+  Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+  Downloading idna-3.9-py3-none-any.whl.metadata (10 kB)
+  Downloading idna-3.8-py3-none-any.whl.metadata (9.9 kB)
+  Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+  Downloading idna-3.6-py3-none-any.whl.metadata (9.9 kB)
+  Downloading idna-3.5-py3-none-any.whl.metadata (9.9 kB)
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+  Downloading idna-3.3-py3-none-any.whl.metadata (9.8 kB)
+  Downloading idna-3.2-py3-none-any.whl.metadata (8.6 kB)
+  Downloading idna-3.1-py3-none-any.whl.metadata (8.7 kB)
+  Downloading idna-3.0-py2.py3-none-any.whl.metadata (8.7 kB)
+  Downloading idna-2.10-py2.py3-none-any.whl.metadata (9.1 kB)
+  Downloading idna-2.9-py2.py3-none-any.whl.metadata (9.1 kB)
+  Downloading idna-2.8-py2.py3-none-any.whl.metadata (8.9 kB)
+  Downloading idna-2.7-py2.py3-none-any.whl.metadata (8.9 kB)
+  Downloading idna-2.6-py2.py3-none-any.whl.metadata (8.9 kB)
+  Downloading idna-2.5-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting google-auth-oauthlib<1.1,>=0.5 (from tensorboard<2.13,>=2.12->tensorflow==2.12.1->-r requirements.txt (line 12))
+  Using cached google_auth_oauthlib-0.8.0-py2.py3-none-any.whl.metadata (2.6 kB)
+  Downloading google_auth_oauthlib-0.7.1-py2.py3-none-any.whl.metadata (2.6 kB)
+  Downloading google_auth_oauthlib-0.7.0-py2.py3-none-any.whl.metadata (2.6 kB)
+  Downloading google_auth_oauthlib-0.5.3-py2.py3-none-any.whl.metadata (2.7 kB)
+error: resolution-too-deep
 
-× Encountered error while generating package metadata.
-╰─> wrapt
+× Dependency resolution exceeded maximum depth
+╰─> Pip cannot resolve the current dependencies as the dependency graph is too complex for pip to solve efficiently.
 
-note: This is an issue with the package mentioned above, not pip.
-hint: See above for details.
+hint: Try adding lower bounds to constrain your dependencies, for example: 'package>=2.0.0' instead of just 'package'. 
+
+Link: https://pip.pypa.io/en/stable/topics/dependency-resolution/#handling-resolution-too-deep-errors
 
 The dependency install failed. On no-root servers, the most common cause is a pip
 resolver conflict or a server image with incompatible preinstalled packages.
@@ -620,5 +448,3 @@ Options:
        LINUX_GPU_CONSTRAINTS= bash linux-gpu/install_linux_a6000.sh
 
 interns@workstation003:~/Desktop/work/fresh$ 
-
-man the errors just dont stop
