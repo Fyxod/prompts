@@ -1,0 +1,63 @@
+{
+  "image_a": "/home/interns/Desktop/work/fresh/subset/_working/run_000018_szxpzi65/original_diffused.png",
+  "image_b": "/home/interns/Desktop/work/fresh/subset/_working/run_000018_szxpzi65/perturbed_diffused.png",
+  "detector_backend": "skip",
+  "distance_metric": "cosine",
+  "execution": {
+    "allow_parallel": false,
+    "requested_workers": "auto",
+    "enabled_models": 4,
+    "cpu_count": 40,
+    "total_memory_gb": 251.37,
+    "available_memory_gb": 217.23,
+    "resolved_workers": 1,
+    "parallel": false,
+    "persistent_worker": true,
+    "worker_reused_attempts": 19,
+    "max_attempts_per_worker": 100
+  },
+  "models": {
+    "SFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.038216,
+      "threshold": 0.593,
+      "match_percent": 96.77774030354132,
+      "elapsed_seconds": 0.07723427005112171
+    },
+    "OpenFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.005663,
+      "threshold": 0.1,
+      "match_percent": 97.16850000000001,
+      "elapsed_seconds": 0.30274898558855057
+    },
+    "Facenet": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.037472,
+      "threshold": 0.4,
+      "match_percent": 95.316,
+      "elapsed_seconds": 0.9725767783820629
+    },
+    "Facenet512": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.004473,
+      "threshold": 0.3,
+      "match_percent": 99.25450000000001,
+      "elapsed_seconds": 0.8781020119786263
+    }
+  },
+  "summary": {
+    "successful_models": 4,
+    "mean_match_percent": 97.12918507588535,
+    "min_match_percent": 95.316,
+    "max_match_percent": 99.25450000000001
+  }
+}

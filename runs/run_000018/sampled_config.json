@@ -1,0 +1,101 @@
+{
+  "input": "/home/interns/Desktop/work/fresh/samples/image.png",
+  "output_dir": "/home/interns/Desktop/work/fresh/subset/unsuccessful/run_000018",
+  "prompt": "add sunglasses",
+  "seed": 63989048,
+  "perturbations": [
+    {
+      "method": "homography",
+      "enabled": false,
+      "strength": 0.04
+    },
+    {
+      "method": "thin-plate-spline",
+      "enabled": true,
+      "strength": 0.001569125611938987,
+      "grid": 9,
+      "seed": 63989048
+    },
+    {
+      "method": "delaunay",
+      "enabled": true,
+      "strength": 0.006323550586931256,
+      "grid": 11,
+      "seed": 63989049
+    },
+    {
+      "method": "fft-phase",
+      "enabled": true,
+      "strength": 172.43166201018178,
+      "coefficients": 8,
+      "seed": 63989050
+    },
+    {
+      "method": "elastic",
+      "enabled": true,
+      "strength": 0.0072939648614930765,
+      "sigma": 17.892418189117105,
+      "seed": 63989051
+    },
+    {
+      "method": "rolling-shutter",
+      "enabled": true,
+      "strength": 0.008175016046075893,
+      "rolling_frequency": 0.538331180225013,
+      "rolling_phase": 0.0,
+      "rolling_shear": 0.04142680937696254,
+      "rolling_acceleration": -0.011428967750385235,
+      "seed": 63989052
+    }
+  ],
+  "diffusion": {
+    "cpu": false,
+    "device": "auto",
+    "gpu_index": 0,
+    "models": {
+      "instruct_pix2pix": {
+        "enabled": false,
+        "model_id": "timbrooks/instruct-pix2pix",
+        "num_inference_steps": 20,
+        "guidance_scale": 7.5,
+        "image_guidance_scale": 1.0,
+        "max_size": 768,
+        "seed": 63989048
+      },
+      "flux2_klein": {
+        "enabled": true,
+        "model_id": "black-forest-labs/FLUX.2-klein-4B",
+        "num_inference_steps": 10,
+        "guidance_scale": 1.0,
+        "max_size": 1024,
+        "height": null,
+        "width": null,
+        "max_sequence_length": 512,
+        "text_encoder_out_layers": [
+          9,
+          18,
+          27
+        ],
+        "torch_dtype": "bfloat16",
+        "cpu_offload": false,
+        "sigmas": null,
+        "seed": 63989048
+      }
+    },
+    "seed": 63989048
+  },
+  "deepface": {
+    "enabled": true,
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "enforce_detection": false,
+    "align": false,
+    "workers": "auto",
+    "models": {
+      "SFace": true,
+      "OpenFace": true,
+      "Facenet": true,
+      "Facenet512": true
+    }
+  }
+}
