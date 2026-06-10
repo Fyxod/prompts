@@ -1,13 +1,13 @@
 {
-  "config_path": "/home/interns/Desktop/work/fresh/pipeline.json",
-  "input": "/home/interns/Desktop/work/fresh/single/cropped.jpg",
-  "output_dir": "/home/interns/Desktop/work/fresh/output/run_001",
+  "config_path": "/home/interns/Desktop/work/try-install/pipeline.json",
+  "input": "/home/interns/Desktop/work/try-install/samples/image.png",
+  "output_dir": "/home/interns/Desktop/work/try-install/output/run_001",
   "prompt": "add sunglasses",
   "seed": 15,
-  "elapsed_seconds": 267.25220472738147,
+  "elapsed_seconds": 62.09252195060253,
   "deepface": {
-    "image_a": "/home/interns/Desktop/work/fresh/output/run_001/original_diffused.png",
-    "image_b": "/home/interns/Desktop/work/fresh/output/run_001/perturbed_diffused.png",
+    "image_a": "/home/interns/Desktop/work/try-install/output/run_001/original_diffused.png",
+    "image_b": "/home/interns/Desktop/work/try-install/output/run_001/perturbed_diffused.png",
     "detector_backend": "skip",
     "distance_metric": "cosine",
     "execution": {
@@ -16,7 +16,7 @@
       "enabled_models": 4,
       "cpu_count": 40,
       "total_memory_gb": 251.37,
-      "available_memory_gb": 211.26,
+      "available_memory_gb": 212.19,
       "resolved_workers": 3,
       "parallel": true
     },
@@ -25,44 +25,44 @@
         "enabled": true,
         "ok": true,
         "verified": true,
-        "distance": 0.104072,
+        "distance": 0.025941,
         "threshold": 0.593,
-        "match_percent": 91.22495784148398,
-        "elapsed_seconds": 1.3294836059212685
+        "match_percent": 97.81273187183811,
+        "elapsed_seconds": 1.0853676944971085
       },
       "OpenFace": {
         "enabled": true,
         "ok": true,
         "verified": true,
-        "distance": 0.02418,
+        "distance": 0.012221,
         "threshold": 0.1,
-        "match_percent": 87.91,
-        "elapsed_seconds": 11.271309990435839
+        "match_percent": 93.8895,
+        "elapsed_seconds": 10.05468393675983
       },
       "Facenet": {
         "enabled": true,
         "ok": true,
         "verified": true,
-        "distance": 0.034028,
+        "distance": 0.014269,
         "threshold": 0.4,
-        "match_percent": 95.7465,
-        "elapsed_seconds": 19.816549820825458
+        "match_percent": 98.216375,
+        "elapsed_seconds": 18.54555670171976
       },
       "Facenet512": {
         "enabled": true,
         "ok": true,
-        "verified": true,
-        "distance": 0.0503,
+        "verified": false,
+        "distance": Infinity,
         "threshold": 0.3,
-        "match_percent": 91.61666666666667,
-        "elapsed_seconds": 19.098303709179163
+        "match_percent": 0.0,
+        "elapsed_seconds": 17.9084017816931
       }
     },
     "summary": {
       "successful_models": 4,
-      "mean_match_percent": 91.62453112703767,
-      "min_match_percent": 87.91,
-      "max_match_percent": 95.7465
+      "mean_match_percent": 72.47965171795953,
+      "min_match_percent": 0.0,
+      "max_match_percent": 98.216375
     }
   },
   "perturbations": [
@@ -191,10 +191,10 @@
     "execution_mode": "batched"
   },
   "outputs": {
-    "original": "/home/interns/Desktop/work/fresh/output/run_001/original.png",
-    "perturbed": "/home/interns/Desktop/work/fresh/output/run_001/perturbed.png",
-    "original_diffused": "/home/interns/Desktop/work/fresh/output/run_001/original_diffused.png",
-    "perturbed_diffused": "/home/interns/Desktop/work/fresh/output/run_001/perturbed_diffused.png",
-    "report": "/home/interns/Desktop/work/fresh/output/run_001/report.json"
+    "original": "/home/interns/Desktop/work/try-install/output/run_001/original.png",
+    "perturbed": "/home/interns/Desktop/work/try-install/output/run_001/perturbed.png",
+    "original_diffused": "/home/interns/Desktop/work/try-install/output/run_001/original_diffused.png",
+    "perturbed_diffused": "/home/interns/Desktop/work/try-install/output/run_001/perturbed_diffused.png",
+    "report": "/home/interns/Desktop/work/try-install/output/run_001/report.json"
   }
 }
