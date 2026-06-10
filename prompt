@@ -1,28 +1,331 @@
-(/home/interns/Desktop/work/fresh/.venv-linux-gpu) interns@workstation003:~/Desktop/work/fresh$ python -m run_brute_force -- config brute.json
-usage: run_brute_force.py [-h] [--config CONFIG]
-run_brute_force.py: error: unrecognized arguments: -- config brute.json
-(/home/interns/Desktop/work/fresh/.venv-linux-gpu) interns@workstation003:~/Desktop/work/fresh$ python -m run_brute_force --config brute.json
-2026-06-10 10:44:41.913921: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2026-06-10 10:44:41.998377: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+(/home/interns/Desktop/work/try-install/.venv-linux-gpu) interns@workstation003:~/Desktop/work/try-install$ python -m run_batch_brute_force --config batch_brute.json
+2026-06-10 16:52:46.309036: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-10 16:52:46.374133: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2026-06-10 10:44:43.900373: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
-Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 29.12it/s]
-Loading pipeline components...: 100%|█████| 5/5 [00:00<00:00,  6.37it/s]
-`height` and `width` have to be divisible by 16 but are 344 and 520. Dimensions will be resized accordingly
-100%|███████████████████████████████████| 10/10 [00:04<00:00,  2.50it/s]
-2026-06-10 10:45:02.358454: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1956] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+2026-06-10 16:52:48.482851: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 32.60it/s]
+Loading pipeline components...: 100%|██████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00,  6.33it/s]
+`height` and `width` have to be divisible by 16 but are 528 and 904. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.06s/it]
+run_000000: average=97.6682 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 528 and 904. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.07s/it]
+run_000001: average=98.1881 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 528 and 904. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.08s/it]
+run_000002: average=97.7570 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 528 and 904. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.08s/it]
+run_000003: average=97.8068 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 528 and 904. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.09s/it]
+run_000004: average=98.3511 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 528 and 904. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.09s/it]
+run_000005: average=96.9908 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 528 and 904. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.09s/it]
+run_000006: average=97.4942 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 528 and 904. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:10<00:00,  1.09s/it]
+run_000007: average=98.8533 status=unsuccessful action=executed
+^CTraceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/interns/Desktop/work/try-install/run_batch_brute_force.py", line 5, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/batch_brute_force.py", line 538, in main
+    report = run_batch_brute_force(args.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/batch_brute_force.py", line 465, in run_batch_brute_force
+    _run_combo(plan, event_callback=event_callback, stop_requested=stop_requested)
+  File "/home/interns/Desktop/work/try-install/geometric_v1/batch_brute_force.py", line 206, in _run_combo
+    report = run_brute_force(
+             ^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/brute_force.py", line 910, in run_brute_force
+    report = run_pipeline(
+             ^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/pipeline.py", line 46, in run_pipeline
+    perturbed_array = apply_perturbation_pipeline(original_array, config.perturbations)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/perturbations.py", line 210, in apply_perturbation_pipeline
+    output = apply_perturbation(output, step)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/perturbations.py", line 195, in apply_perturbation
+    return thin_plate_spline_warp(image, step.strength, step.seed, step.grid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/perturbations.py", line 85, in thin_plate_spline_warp
+    map_y = _tps_eval(query, dst, weights_y, affine_y).reshape(height, width)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/perturbations.py", line 112, in _tps_eval
+    distances = np.linalg.norm(query[:, None, :] - points[None, :, :], axis=2)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<__array_function__ internals>", line 177, in norm
+KeyboardInterrupt
+
+(/home/interns/Desktop/work/try-install/.venv-linux-gpu) interns@workstation003:~/Desktop/work/try-install$ python -m run_pipeline --config pipeline.json
+2026-06-10 16:57:35.573749: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-10 16:57:35.638918: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-10 16:57:37.782822: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 32.89it/s]
+Loading pipeline components...: 100%|██████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00,  6.65it/s]
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.12it/s]
+2026-06-10 16:57:57.653700: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1956] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
 Skipping registering GPU devices...
-run_000000: average=91.8937 status=unsuccessful action=executed
-`height` and `width` have to be divisible by 16 but are 344 and 520. Dimensions will be resized accordingly
-100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.50it/s]
-run_000001: average=74.7971 status=unsuccessful action=executed
-`height` and `width` have to be divisible by 16 but are 344 and 520. Dimensions will be resized accordingly
-100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.49it/s]
-run_000002: average=94.2818 status=unsuccessful action=executed
-`height` and `width` have to be divisible by 16 but are 344 and 520. Dimensions will be resized accordingly
-100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.49it/s]
-Segmentation fault
-(/home/interns/Desktop/work/fresh/.venv-linux-gpu) interns@workstation003:~/Desktop/work/fresh$ 
+{
+  "original": "/home/interns/Desktop/work/try-install/output/run_001/original.png",
+  "perturbed": "/home/interns/Desktop/work/try-install/output/run_001/perturbed.png",
+  "original_diffused": "/home/interns/Desktop/work/try-install/output/run_001/original_diffused.png",
+  "perturbed_diffused": "/home/interns/Desktop/work/try-install/output/run_001/perturbed_diffused.png",
+  "report": "/home/interns/Desktop/work/try-install/output/run_001/report.json"
+}
+(/home/interns/Desktop/work/try-install/.venv-linux-gpu) interns@workstation003:~/Desktop/work/try-install$ python -m run_brute_force --config brute.json
+2026-06-10 16:59:28.145634: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-10 16:59:28.211859: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-10 16:59:29.962884: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 31.95it/s]
+Loading pipeline components...: 100%|██████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00,  6.31it/s]
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.13it/s]
+run_000000: average=93.1974 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.12it/s]
+run_000001: average=92.9317 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.11it/s]
+run_000002: average=90.6914 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.10it/s]
+run_000003: average=95.8698 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.10it/s]
+run_000004: average=90.5665 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.09it/s]
+run_000005: average=96.3570 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.09it/s]
+run_000006: average=95.5538 status=unsuccessful action=executed
+`height` and `width` have to be divisible by 16 but are 344 and 616. Dimensions will be resized accordingly
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:04<00:00,  2.08it/s]
+^CTraceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/interns/Desktop/work/try-install/run_brute_force.py", line 5, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/brute_force.py", line 1037, in main
+    report = run_brute_force(args.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/brute_force.py", line 916, in run_brute_force
+    report["deepface"] = _run_deepface_isolated(
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/brute_force.py", line 507, in _run_deepface_isolated
+    deepface_report = worker.compare(image_a, image_b, sampled_config_path)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/brute_force.py", line 371, in compare
+    response = self._read_response(request_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/geometric_v1/brute_force.py", line 341, in _read_response
+    line = self.stdout_queue.get(timeout=min(0.25, remaining))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/interns/Desktop/work/try-install/.venv-linux-gpu/lib/python3.11/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/interns/Desktop/work/try-install/.venv-linux-gpu/lib/python3.11/threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+(/home/interns/Desktop/work/try-install/.venv-linux-gpu) interns@workstation003:~/Desktop/work/try-install$ 
 
 
-pipeline.json ran fine. brute threw error. workers are set to auto
+
+
+
+
+
+
+
+
+{
+  "input": "subset/2.jpg",
+  "output_dir": "output/run_001",
+  "prompt": "add beard",
+  "seed": 15,
+  "perturbations": [
+    {
+      "method": "homography",
+      "enabled": false,
+      "strength": 0.04
+    },
+    {
+      "method": "thin-plate-spline",
+      "enabled": true,
+      "strength": 0.002,
+      "grid": 7
+    },
+    {
+      "method": "delaunay",
+      "enabled": true,
+      "strength": 0.008, 
+      "grid": 8
+    },
+    {
+      "method": "fft-phase",
+      "enabled": true,
+      "strength": 50000,
+      "coefficients": 6
+    },
+    {
+      "method": "elastic",
+      "enabled": true,
+      "strength": 0.01,
+      "sigma": 12.0
+    },
+    {
+      "method": "rolling-shutter",
+      "enabled": true,
+      "strength": 0.008,
+      "rolling_frequency": 1.5,
+      "rolling_phase": 0.0,
+      "rolling_shear": 0.02,
+      "rolling_acceleration": 0.0
+    }
+  ],
+  "diffusion": {
+    "cpu": false,
+    "device": "auto",
+    "gpu_index": 0,
+    "models": {
+      "instruct_pix2pix": {
+        "enabled": false,
+        "model_id": "timbrooks/instruct-pix2pix",
+        "num_inference_steps": 20,
+        "guidance_scale": 7.5,
+        "image_guidance_scale": 1.0,
+        "max_size": 768,
+        "seed": 42
+      },
+      "flux2_klein": {
+        "enabled": true,
+        "model_id": "black-forest-labs/FLUX.2-klein-4B",
+        "num_inference_steps": 10,
+        "guidance_scale": 1.0,
+        "max_size": 1024,
+        "height": null,
+        "width": null,
+        "max_sequence_length": 512,
+        "text_encoder_out_layers": [9, 18, 27],
+        "torch_dtype": "bfloat16",
+        "cpu_offload": false,
+        "sigmas": null,
+        "seed": 42
+      }
+    }
+  },
+  "deepface": {
+    "enabled": true,
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "enforce_detection": false,
+    "align": false,
+    "workers": "auto",
+    "models": {
+      "SFace": true,
+      "OpenFace": true,
+      "Facenet": true,
+      "Facenet512": true
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "pipeline_config": "pipeline.json",
+  "output_dir": "output/brute",
+  "trials": 2000,
+  "success_threshold": 50.0,
+  "seed": 42,
+  "randomize_attempt_seed": true,
+  "attempt_seed_range": [1, 2147483647],
+  "resume": true,
+  "save_unsuccessful": true,
+  "deepface_worker": {
+    "enabled": true,
+    "max_attempts_per_worker": 100,
+    "timeout_seconds": 600,
+    "restart_on_failure": true
+  },
+  "ranges": {
+    "homography": {
+      "strength": [0.01, 0.08]
+    },
+    "thin-plate-spline": {
+      "strength": [0.001, 0.003],
+      "grid": [5, 9]
+    },
+    "delaunay": {
+      "strength": [0, 0.009],
+      "grid": [6, 12]
+    },
+    "fft-phase": {
+      "strength": [0, 10000],
+      "coefficients": [4, 16]
+    },
+    "elastic": {
+      "strength": [0, 0.01],
+      "sigma": [6.0, 18.0]
+    },
+    "rolling-shutter": {
+      "strength": [0, 0.009],
+      "rolling_frequency": [0.5, 3.0],
+      "rolling_shear": [0.0, 0.06],
+      "rolling_acceleration": [-0.03, 0.03]
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "brute_config": "brute.json",
+  "pipeline_config": "pipeline.json",
+  "images_dir": "subset",
+  "image_extensions": [".png", ".jpg", ".jpeg", ".webp"],
+  "recursive": false,
+  "prompts": [
+    "add beard"
+  ],
+  "output_dir": "output/batch_brute",
+  "skip_existing": true,
+  "overwrite_existing": false,
+  "parallel_combinations": 1
+}
