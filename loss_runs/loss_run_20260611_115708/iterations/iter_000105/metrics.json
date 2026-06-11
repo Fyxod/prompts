@@ -1,0 +1,289 @@
+{
+  "iteration": 105,
+  "label": "restart_0_spsa_35_minus",
+  "loss": 163.59395440835732,
+  "loss_components": {
+    "alpha_post_objective": 78.28466361017426,
+    "alpha_pre_penalty": 13.536512669667408,
+    "psnr_penalty": 71.51638232734588,
+    "ssim_penalty": 0.21522860234112087,
+    "lpips_penalty": 0.0,
+    "parameter_regularization_penalty": 0.041167198828665555
+  },
+  "metric_summary": {
+    "alpha_pre": 88.35461173763349,
+    "alpha_post": 78.28466361017426,
+    "beta": {
+      "psnr": 22.02018468816361,
+      "ssim": 0.7872145264944731,
+      "lpips": 0.1580018699169159
+    }
+  },
+  "parameters": {
+    "thin-plate-spline": {
+      "strength": 0.00566481053145534,
+      "grid": 9
+    },
+    "delaunay": {
+      "strength": 0.012,
+      "grid": 12
+    },
+    "fft-phase": {
+      "strength": 558.6491142410994,
+      "coefficients": 5
+    },
+    "elastic": {
+      "strength": 0.012,
+      "sigma": 6.0
+    },
+    "rolling-shutter": {
+      "strength": 0.01132962106291068,
+      "rolling_frequency": 0.6396622785602748,
+      "rolling_shear": 0.06,
+      "rolling_acceleration": 0.026648105314553402
+    }
+  },
+  "normalized_parameters": [
+    0.94413508857589,
+    1.0,
+    1.0,
+    1.0,
+    0.05586491142410994,
+    0.05586491142410994,
+    1.0,
+    0.0,
+    0.94413508857589,
+    0.05586491142410994,
+    1.0,
+    0.94413508857589
+  ],
+  "metrics": {
+    "alpha_pre": 88.35461173763349,
+    "alpha_post": 78.28466361017426,
+    "psnr": 22.02018468816361,
+    "ssim": 0.7872145264944731,
+    "lpips": 0.1580018699169159
+  },
+  "alpha_pre_report": {
+    "image_a": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/original.png",
+    "image_b": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000105/perturbed.png",
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "execution": {
+      "allow_parallel": false,
+      "requested_workers": "auto",
+      "enabled_models": 4,
+      "cpu_count": 40,
+      "total_memory_gb": 251.37,
+      "available_memory_gb": 219.18,
+      "resolved_workers": 1,
+      "parallel": false
+    },
+    "models": {
+      "SFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.102177,
+        "threshold": 0.593,
+        "match_percent": 91.38473861720068,
+        "elapsed_seconds": 0.057376155629754066
+      },
+      "OpenFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.046701,
+        "threshold": 0.1,
+        "match_percent": 76.6495,
+        "elapsed_seconds": 0.29713890329003334
+      },
+      "Facenet": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.086613,
+        "threshold": 0.4,
+        "match_percent": 89.173375,
+        "elapsed_seconds": 0.6188237387686968
+      },
+      "Facenet512": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.022735,
+        "threshold": 0.3,
+        "match_percent": 96.21083333333334,
+        "elapsed_seconds": 0.733462842181325
+      }
+    },
+    "summary": {
+      "successful_models": 4,
+      "mean_match_percent": 88.35461173763349,
+      "min_match_percent": 76.6495,
+      "max_match_percent": 96.21083333333334
+    }
+  },
+  "alpha_post_report": {
+    "image_a": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/original_diffused.png",
+    "image_b": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000105/perturbed_diffused.png",
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "execution": {
+      "allow_parallel": false,
+      "requested_workers": "auto",
+      "enabled_models": 4,
+      "cpu_count": 40,
+      "total_memory_gb": 251.37,
+      "available_memory_gb": 219.2,
+      "resolved_workers": 1,
+      "parallel": false
+    },
+    "models": {
+      "SFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.086421,
+        "threshold": 0.593,
+        "match_percent": 92.71323777403036,
+        "elapsed_seconds": 0.06770095229148865
+      },
+      "OpenFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": false,
+        "distance": 0.125093,
+        "threshold": 0.1,
+        "match_percent": 37.4535,
+        "elapsed_seconds": 0.25913975201547146
+      },
+      "Facenet": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.050622,
+        "threshold": 0.4,
+        "match_percent": 93.67225,
+        "elapsed_seconds": 0.6277380734682083
+      },
+      "Facenet512": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.064202,
+        "threshold": 0.3,
+        "match_percent": 89.29966666666667,
+        "elapsed_seconds": 0.6501925643533468
+      }
+    },
+    "summary": {
+      "successful_models": 4,
+      "mean_match_percent": 78.28466361017426,
+      "min_match_percent": 37.4535,
+      "max_match_percent": 93.67225
+    }
+  },
+  "perturbations": [
+    {
+      "method": "homography",
+      "enabled": false,
+      "strength": 0.04,
+      "seed": 147
+    },
+    {
+      "method": "thin-plate-spline",
+      "enabled": true,
+      "strength": 0.00566481053145534,
+      "seed": 148,
+      "grid": 9
+    },
+    {
+      "method": "delaunay",
+      "enabled": true,
+      "strength": 0.012,
+      "seed": 149,
+      "grid": 12
+    },
+    {
+      "method": "fft-phase",
+      "enabled": true,
+      "strength": 558.6491142410994,
+      "seed": 150,
+      "coefficients": 5
+    },
+    {
+      "method": "elastic",
+      "enabled": true,
+      "strength": 0.012,
+      "seed": 151,
+      "sigma": 6.0
+    },
+    {
+      "method": "rolling-shutter",
+      "enabled": true,
+      "strength": 0.01132962106291068,
+      "seed": 152,
+      "rolling_frequency": 0.6396622785602748,
+      "rolling_phase": 0.0,
+      "rolling_shear": 0.06,
+      "rolling_acceleration": 0.026648105314553402
+    }
+  ],
+  "diffusion": {
+    "cpu": false,
+    "device": "auto",
+    "gpu_index": 0,
+    "selected_model": "flux2_klein",
+    "selected_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "num_inference_steps": 10,
+    "guidance_scale": 1.0,
+    "image_guidance_scale": 1.0,
+    "max_size": 1024,
+    "seed": 42,
+    "instruct_pix2pix": {
+      "enabled": false,
+      "model_id": "timbrooks/instruct-pix2pix",
+      "num_inference_steps": 20,
+      "guidance_scale": 7.5,
+      "image_guidance_scale": 1.0,
+      "max_size": 768,
+      "seed": 42
+    },
+    "flux2_klein": {
+      "enabled": true,
+      "model_id": "black-forest-labs/FLUX.2-klein-4B",
+      "num_inference_steps": 10,
+      "guidance_scale": 1.0,
+      "max_size": 1024,
+      "height": null,
+      "width": null,
+      "max_sequence_length": 512,
+      "text_encoder_out_layers": [
+        9,
+        18,
+        27
+      ],
+      "torch_dtype": "bfloat16",
+      "cpu_offload": false,
+      "sigmas": null,
+      "seed": 42
+    },
+    "used_model": "flux2_klein",
+    "used_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "resolved_device": "cuda:0"
+  },
+  "deepface_models": {
+    "SFace": true,
+    "OpenFace": true,
+    "Facenet": true,
+    "Facenet512": true
+  },
+  "outputs": {
+    "perturbed": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000105/perturbed.png",
+    "perturbed_diffused": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000105/perturbed_diffused.png",
+    "metrics": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000105/metrics.json"
+  },
+  "elapsed_seconds": 9.299151690676808
+}

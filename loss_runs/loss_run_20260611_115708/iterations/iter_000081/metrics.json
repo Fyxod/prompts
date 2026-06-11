@@ -1,0 +1,289 @@
+{
+  "iteration": 81,
+  "label": "restart_0_spsa_27_minus",
+  "loss": 172.57444400854075,
+  "loss_components": {
+    "alpha_post_objective": 91.12976640668916,
+    "alpha_pre_penalty": 0.0,
+    "psnr_penalty": 81.15817689887778,
+    "ssim_penalty": 0.23917913977143318,
+    "lpips_penalty": 0.0,
+    "parameter_regularization_penalty": 0.047321563202372935
+  },
+  "metric_summary": {
+    "alpha_pre": 92.01701039910061,
+    "alpha_post": 91.12976640668916,
+    "beta": {
+      "psnr": 21.629828224495128,
+      "ssim": 0.782188111198805,
+      "lpips": 0.0918690413236618
+    }
+  },
+  "parameters": {
+    "thin-plate-spline": {
+      "strength": 0.00034409114560611623,
+      "grid": 9
+    },
+    "delaunay": {
+      "strength": 0.0006881822912122325,
+      "grid": 12
+    },
+    "fft-phase": {
+      "strength": 9426.51475732314,
+      "coefficients": 4
+    },
+    "elastic": {
+      "strength": 0.0,
+      "sigma": 17.311817708787768
+    },
+    "rolling-shutter": {
+      "strength": 0.0006881822912122325,
+      "rolling_frequency": 0.6433713106692152,
+      "rolling_shear": 0.05655908854393884,
+      "rolling_acceleration": 0.02655908854393884
+    }
+  },
+  "normalized_parameters": [
+    0.05734852426768604,
+    1.0,
+    0.05734852426768604,
+    0.942651475732314,
+    0.942651475732314,
+    0.0,
+    0.0,
+    0.942651475732314,
+    0.05734852426768604,
+    0.05734852426768604,
+    0.942651475732314,
+    0.942651475732314
+  ],
+  "metrics": {
+    "alpha_pre": 92.01701039910061,
+    "alpha_post": 91.12976640668916,
+    "psnr": 21.629828224495128,
+    "ssim": 0.782188111198805,
+    "lpips": 0.0918690413236618
+  },
+  "alpha_pre_report": {
+    "image_a": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/original.png",
+    "image_b": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000081/perturbed.png",
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "execution": {
+      "allow_parallel": false,
+      "requested_workers": "auto",
+      "enabled_models": 4,
+      "cpu_count": 40,
+      "total_memory_gb": 251.37,
+      "available_memory_gb": 219.22,
+      "resolved_workers": 1,
+      "parallel": false
+    },
+    "models": {
+      "SFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.037232,
+        "threshold": 0.593,
+        "match_percent": 96.86070826306914,
+        "elapsed_seconds": 0.05770659074187279
+      },
+      "OpenFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.033265,
+        "threshold": 0.1,
+        "match_percent": 83.36749999999999,
+        "elapsed_seconds": 0.25360692478716373
+      },
+      "Facenet": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.061636,
+        "threshold": 0.4,
+        "match_percent": 92.2955,
+        "elapsed_seconds": 0.7093026842921972
+      },
+      "Facenet512": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.026734,
+        "threshold": 0.3,
+        "match_percent": 95.54433333333333,
+        "elapsed_seconds": 0.6801810171455145
+      }
+    },
+    "summary": {
+      "successful_models": 4,
+      "mean_match_percent": 92.01701039910061,
+      "min_match_percent": 83.36749999999999,
+      "max_match_percent": 96.86070826306914
+    }
+  },
+  "alpha_post_report": {
+    "image_a": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/original_diffused.png",
+    "image_b": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000081/perturbed_diffused.png",
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "execution": {
+      "allow_parallel": false,
+      "requested_workers": "auto",
+      "enabled_models": 4,
+      "cpu_count": 40,
+      "total_memory_gb": 251.37,
+      "available_memory_gb": 219.12,
+      "resolved_workers": 1,
+      "parallel": false
+    },
+    "models": {
+      "SFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.05576,
+        "threshold": 0.593,
+        "match_percent": 95.29848229342328,
+        "elapsed_seconds": 0.0629890039563179
+      },
+      "OpenFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.053514,
+        "threshold": 0.1,
+        "match_percent": 73.24300000000001,
+        "elapsed_seconds": 0.29502912424504757
+      },
+      "Facenet": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.017942,
+        "threshold": 0.4,
+        "match_percent": 97.75725,
+        "elapsed_seconds": 0.6715203635394573
+      },
+      "Facenet512": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.010678,
+        "threshold": 0.3,
+        "match_percent": 98.22033333333333,
+        "elapsed_seconds": 0.6904653403908014
+      }
+    },
+    "summary": {
+      "successful_models": 4,
+      "mean_match_percent": 91.12976640668916,
+      "min_match_percent": 73.24300000000001,
+      "max_match_percent": 98.22033333333333
+    }
+  },
+  "perturbations": [
+    {
+      "method": "homography",
+      "enabled": false,
+      "strength": 0.04,
+      "seed": 123
+    },
+    {
+      "method": "thin-plate-spline",
+      "enabled": true,
+      "strength": 0.00034409114560611623,
+      "seed": 124,
+      "grid": 9
+    },
+    {
+      "method": "delaunay",
+      "enabled": true,
+      "strength": 0.0006881822912122325,
+      "seed": 125,
+      "grid": 12
+    },
+    {
+      "method": "fft-phase",
+      "enabled": true,
+      "strength": 9426.51475732314,
+      "seed": 126,
+      "coefficients": 4
+    },
+    {
+      "method": "elastic",
+      "enabled": true,
+      "strength": 0.0,
+      "seed": 127,
+      "sigma": 17.311817708787768
+    },
+    {
+      "method": "rolling-shutter",
+      "enabled": true,
+      "strength": 0.0006881822912122325,
+      "seed": 128,
+      "rolling_frequency": 0.6433713106692152,
+      "rolling_phase": 0.0,
+      "rolling_shear": 0.05655908854393884,
+      "rolling_acceleration": 0.02655908854393884
+    }
+  ],
+  "diffusion": {
+    "cpu": false,
+    "device": "auto",
+    "gpu_index": 0,
+    "selected_model": "flux2_klein",
+    "selected_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "num_inference_steps": 10,
+    "guidance_scale": 1.0,
+    "image_guidance_scale": 1.0,
+    "max_size": 1024,
+    "seed": 42,
+    "instruct_pix2pix": {
+      "enabled": false,
+      "model_id": "timbrooks/instruct-pix2pix",
+      "num_inference_steps": 20,
+      "guidance_scale": 7.5,
+      "image_guidance_scale": 1.0,
+      "max_size": 768,
+      "seed": 42
+    },
+    "flux2_klein": {
+      "enabled": true,
+      "model_id": "black-forest-labs/FLUX.2-klein-4B",
+      "num_inference_steps": 10,
+      "guidance_scale": 1.0,
+      "max_size": 1024,
+      "height": null,
+      "width": null,
+      "max_sequence_length": 512,
+      "text_encoder_out_layers": [
+        9,
+        18,
+        27
+      ],
+      "torch_dtype": "bfloat16",
+      "cpu_offload": false,
+      "sigmas": null,
+      "seed": 42
+    },
+    "used_model": "flux2_klein",
+    "used_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "resolved_device": "cuda:0"
+  },
+  "deepface_models": {
+    "SFace": true,
+    "OpenFace": true,
+    "Facenet": true,
+    "Facenet512": true
+  },
+  "outputs": {
+    "perturbed": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000081/perturbed.png",
+    "perturbed_diffused": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000081/perturbed_diffused.png",
+    "metrics": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000081/metrics.json"
+  },
+  "elapsed_seconds": 8.768866391852498
+}

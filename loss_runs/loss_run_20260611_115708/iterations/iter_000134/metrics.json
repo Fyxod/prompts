@@ -1,0 +1,289 @@
+{
+  "iteration": 134,
+  "label": "restart_0_spsa_45_plus",
+  "loss": 162.19501864575648,
+  "loss_components": {
+    "alpha_post_objective": 92.32154500421586,
+    "alpha_pre_penalty": 0.0,
+    "psnr_penalty": 69.71445425564777,
+    "ssim_penalty": 0.12053065099651249,
+    "lpips_penalty": 0.0,
+    "parameter_regularization_penalty": 0.038488734896347625
+  },
+  "metric_summary": {
+    "alpha_pre": 92.69763564502529,
+    "alpha_post": 92.32154500421586,
+    "beta": {
+      "psnr": 22.095999057603066,
+      "ssim": 0.8105649509263477,
+      "lpips": 0.11585651338100433
+    }
+  },
+  "parameters": {
+    "thin-plate-spline": {
+      "strength": 0.002242632592988653,
+      "grid": 9
+    },
+    "delaunay": {
+      "strength": 0.001389841844791477,
+      "grid": 11
+    },
+    "fft-phase": {
+      "strength": 2244.5872317540775,
+      "coefficients": 7
+    },
+    "elastic": {
+      "strength": 0.001389841844791477,
+      "sigma": 12.042205150304321
+    },
+    "rolling-shutter": {
+      "strength": 0.007514734814022694,
+      "rolling_frequency": 2.4733064499476876,
+      "rolling_shear": 0.04653247660947553,
+      "rolling_acceleration": 0.02673211493533855
+    }
+  },
+  "normalized_parameters": [
+    0.3737720988314422,
+    1.0,
+    0.11582015373262308,
+    0.884179846267377,
+    0.22445872317540777,
+    0.22445872317540777,
+    0.11582015373262308,
+    0.5035170958586934,
+    0.6262279011685579,
+    0.7893225799790751,
+    0.7755412768245922,
+    0.9455352489223092
+  ],
+  "metrics": {
+    "alpha_pre": 92.69763564502529,
+    "alpha_post": 92.32154500421586,
+    "psnr": 22.095999057603066,
+    "ssim": 0.8105649509263477,
+    "lpips": 0.11585651338100433
+  },
+  "alpha_pre_report": {
+    "image_a": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/original.png",
+    "image_b": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000134/perturbed.png",
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "execution": {
+      "allow_parallel": false,
+      "requested_workers": "auto",
+      "enabled_models": 4,
+      "cpu_count": 40,
+      "total_memory_gb": 251.37,
+      "available_memory_gb": 219.05,
+      "resolved_workers": 1,
+      "parallel": false
+    },
+    "models": {
+      "SFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.076962,
+        "threshold": 0.593,
+        "match_percent": 93.51079258010118,
+        "elapsed_seconds": 0.0562090128660202
+      },
+      "OpenFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.024784,
+        "threshold": 0.1,
+        "match_percent": 87.608,
+        "elapsed_seconds": 0.24889184348285198
+      },
+      "Facenet": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.052162,
+        "threshold": 0.4,
+        "match_percent": 93.47975,
+        "elapsed_seconds": 0.7240037638694048
+      },
+      "Facenet512": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.022848,
+        "threshold": 0.3,
+        "match_percent": 96.192,
+        "elapsed_seconds": 0.6654087696224451
+      }
+    },
+    "summary": {
+      "successful_models": 4,
+      "mean_match_percent": 92.69763564502529,
+      "min_match_percent": 87.608,
+      "max_match_percent": 96.192
+    }
+  },
+  "alpha_post_report": {
+    "image_a": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/original_diffused.png",
+    "image_b": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000134/perturbed_diffused.png",
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "execution": {
+      "allow_parallel": false,
+      "requested_workers": "auto",
+      "enabled_models": 4,
+      "cpu_count": 40,
+      "total_memory_gb": 251.37,
+      "available_memory_gb": 219.04,
+      "resolved_workers": 1,
+      "parallel": false
+    },
+    "models": {
+      "SFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.061489,
+        "threshold": 0.593,
+        "match_percent": 94.81543001686342,
+        "elapsed_seconds": 0.060544468462467194
+      },
+      "OpenFace": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.038078,
+        "threshold": 0.1,
+        "match_percent": 80.961,
+        "elapsed_seconds": 0.2889721319079399
+      },
+      "Facenet": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.017646,
+        "threshold": 0.4,
+        "match_percent": 97.79425,
+        "elapsed_seconds": 0.721027884632349
+      },
+      "Facenet512": {
+        "enabled": true,
+        "ok": true,
+        "verified": true,
+        "distance": 0.025707,
+        "threshold": 0.3,
+        "match_percent": 95.71549999999999,
+        "elapsed_seconds": 0.6933475527912378
+      }
+    },
+    "summary": {
+      "successful_models": 4,
+      "mean_match_percent": 92.32154500421586,
+      "min_match_percent": 80.961,
+      "max_match_percent": 97.79425
+    }
+  },
+  "perturbations": [
+    {
+      "method": "homography",
+      "enabled": false,
+      "strength": 0.04,
+      "seed": 176
+    },
+    {
+      "method": "thin-plate-spline",
+      "enabled": true,
+      "strength": 0.002242632592988653,
+      "seed": 177,
+      "grid": 9
+    },
+    {
+      "method": "delaunay",
+      "enabled": true,
+      "strength": 0.001389841844791477,
+      "seed": 178,
+      "grid": 11
+    },
+    {
+      "method": "fft-phase",
+      "enabled": true,
+      "strength": 2244.5872317540775,
+      "seed": 179,
+      "coefficients": 7
+    },
+    {
+      "method": "elastic",
+      "enabled": true,
+      "strength": 0.001389841844791477,
+      "seed": 180,
+      "sigma": 12.042205150304321
+    },
+    {
+      "method": "rolling-shutter",
+      "enabled": true,
+      "strength": 0.007514734814022694,
+      "seed": 181,
+      "rolling_frequency": 2.4733064499476876,
+      "rolling_phase": 0.0,
+      "rolling_shear": 0.04653247660947553,
+      "rolling_acceleration": 0.02673211493533855
+    }
+  ],
+  "diffusion": {
+    "cpu": false,
+    "device": "auto",
+    "gpu_index": 0,
+    "selected_model": "flux2_klein",
+    "selected_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "num_inference_steps": 10,
+    "guidance_scale": 1.0,
+    "image_guidance_scale": 1.0,
+    "max_size": 1024,
+    "seed": 42,
+    "instruct_pix2pix": {
+      "enabled": false,
+      "model_id": "timbrooks/instruct-pix2pix",
+      "num_inference_steps": 20,
+      "guidance_scale": 7.5,
+      "image_guidance_scale": 1.0,
+      "max_size": 768,
+      "seed": 42
+    },
+    "flux2_klein": {
+      "enabled": true,
+      "model_id": "black-forest-labs/FLUX.2-klein-4B",
+      "num_inference_steps": 10,
+      "guidance_scale": 1.0,
+      "max_size": 1024,
+      "height": null,
+      "width": null,
+      "max_sequence_length": 512,
+      "text_encoder_out_layers": [
+        9,
+        18,
+        27
+      ],
+      "torch_dtype": "bfloat16",
+      "cpu_offload": false,
+      "sigmas": null,
+      "seed": 42
+    },
+    "used_model": "flux2_klein",
+    "used_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "resolved_device": "cuda:0"
+  },
+  "deepface_models": {
+    "SFace": true,
+    "OpenFace": true,
+    "Facenet": true,
+    "Facenet512": true
+  },
+  "outputs": {
+    "perturbed": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000134/perturbed.png",
+    "perturbed_diffused": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000134/perturbed_diffused.png",
+    "metrics": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000134/metrics.json"
+  },
+  "elapsed_seconds": 7.842024145647883
+}

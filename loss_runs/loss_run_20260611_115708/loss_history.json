@@ -1,0 +1,5893 @@
+{
+  "evaluations": [
+    {
+      "iteration": 1,
+      "label": "restart_0_initial",
+      "loss": 138.7472768556946,
+      "alpha_pre": 92.60232124789208,
+      "alpha_post": 90.59181460792581,
+      "metrics": {
+        "alpha_pre": 92.60232124789208,
+        "alpha_post": 90.59181460792581,
+        "psnr": 23.10198822306993,
+        "ssim": 0.8005671051599039,
+        "lpips": 0.16487175226211548
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00015921581810318176,
+          "grid": 6
+        },
+        "delaunay": {
+          "strength": 0.007798613253354279,
+          "grid": 9
+        },
+        "fft-phase": {
+          "strength": 2204.406220406967,
+          "coefficients": 11
+        },
+        "elastic": {
+          "strength": 0.00971316548013392,
+          "sigma": 6.077985116136732
+        },
+        "rolling-shutter": {
+          "strength": 0.009669831021993695,
+          "rolling_frequency": 2.245348487470567,
+          "rolling_shear": 0.02041503099107951,
+          "rolling_acceleration": -0.020671230011293104
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000001"
+    },
+    {
+      "iteration": 2,
+      "label": "restart_0_spsa_1_plus",
+      "loss": 122.77514982978722,
+      "alpha_pre": 91.61407087900506,
+      "alpha_post": 88.70762103007308,
+      "metrics": {
+        "alpha_pre": 91.61407087900506,
+        "alpha_post": 88.70762103007308,
+        "psnr": 23.880968506463983,
+        "ssim": 0.8113082437252062,
+        "lpips": 0.15970134735107422
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "delaunay": {
+          "strength": 0.008758613253354279,
+          "grid": 9
+        },
+        "fft-phase": {
+          "strength": 1404.406220406967,
+          "coefficients": 12
+        },
+        "elastic": {
+          "strength": 0.00875316548013392,
+          "sigma": 7.037985116136732
+        },
+        "rolling-shutter": {
+          "strength": 0.008709831021993695,
+          "rolling_frequency": 2.045348487470567,
+          "rolling_shear": 0.025215030991079513,
+          "rolling_acceleration": -0.015871230011293105
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000002"
+    },
+    {
+      "iteration": 3,
+      "label": "restart_0_spsa_1_minus",
+      "loss": 135.70732399214174,
+      "alpha_pre": 94.27277648960089,
+      "alpha_post": 92.45732054525013,
+      "metrics": {
+        "alpha_pre": 94.27277648960089,
+        "alpha_post": 92.45732054525013,
+        "psnr": 23.357815854714232,
+        "ssim": 0.8070697610650995,
+        "lpips": 0.20138034224510193
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0006392158181031818,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.006838613253354279,
+          "grid": 10
+        },
+        "fft-phase": {
+          "strength": 3004.4062204069673,
+          "coefficients": 10
+        },
+        "elastic": {
+          "strength": 0.010673165480133919,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.010629831021993694,
+          "rolling_frequency": 2.445348487470567,
+          "rolling_shear": 0.01561503099107951,
+          "rolling_acceleration": -0.025471230011293106
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000003"
+    },
+    {
+      "iteration": 4,
+      "label": "restart_0_spsa_1_current",
+      "loss": 124.40675831276373,
+      "alpha_pre": 92.21176073285554,
+      "alpha_post": 90.90582841483979,
+      "metrics": {
+        "alpha_pre": 92.21176073285554,
+        "alpha_post": 90.90582841483979,
+        "psnr": 23.912749464482843,
+        "ssim": 0.8414044482059588,
+        "lpips": 0.04051315039396286
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000004"
+    },
+    {
+      "iteration": 5,
+      "label": "restart_0_spsa_2_plus",
+      "loss": 225.33624058200178,
+      "alpha_pre": 87.71203514966273,
+      "alpha_post": 87.42621462197863,
+      "metrics": {
+        "alpha_pre": 87.71203514966273,
+        "alpha_post": 87.42621462197863,
+        "psnr": 20.53927832585082,
+        "ssim": 0.7590322801886797,
+        "lpips": 0.15653079748153687
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0004475455134896796,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 745.909189149466,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0008950910269793592,
+          "sigma": 17.104908973020642
+        },
+        "rolling-shutter": {
+          "strength": 0.0008950910269793592,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0555245448651032,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000005"
+    },
+    {
+      "iteration": 6,
+      "label": "restart_0_spsa_2_minus",
+      "loss": 97.8163850720225,
+      "alpha_pre": 96.6003718029792,
+      "alpha_post": 94.95883930578977,
+      "metrics": {
+        "alpha_pre": 96.6003718029792,
+        "alpha_post": 94.95883930578977,
+        "psnr": 26.81546129000205,
+        "ssim": 0.8712316379316402,
+        "lpips": 0.038381658494472504
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.01110490897302064,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.6864772972873665,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.0255245448651032
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000006"
+    },
+    {
+      "iteration": 7,
+      "label": "restart_0_spsa_2_current",
+      "loss": 100.04796756514135,
+      "alpha_pre": 100.0,
+      "alpha_post": 100.0,
+      "metrics": {
+        "alpha_pre": 100.0,
+        "alpha_post": 100.0,
+        "psnr": Infinity,
+        "ssim": 1.0,
+        "lpips": 0.0
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000007"
+    },
+    {
+      "iteration": 8,
+      "label": "restart_0_spsa_3_plus",
+      "loss": 99.77626538525439,
+      "alpha_pre": 99.82306346613267,
+      "alpha_post": 99.7320863371276,
+      "metrics": {
+        "alpha_pre": 99.82306346613267,
+        "alpha_post": 99.7320863371276,
+        "psnr": 44.81088569024307,
+        "ssim": 0.9948063943681963,
+        "lpips": 0.049876853823661804
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0004295878508912464,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 715.9797514854106,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 17.14082429821751
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000008"
+    },
+    {
+      "iteration": 9,
+      "label": "restart_0_spsa_3_minus",
+      "loss": 145.49272694361804,
+      "alpha_pre": 93.66762798622821,
+      "alpha_post": 87.20574046163574,
+      "metrics": {
+        "alpha_pre": 93.66762798622821,
+        "alpha_post": 87.20574046163574,
+        "psnr": 22.612680243777078,
+        "ssim": 0.7910527306658505,
+        "lpips": 0.08370324969291687
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0008591757017824928,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0008591757017824928,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0008591757017824928,
+          "rolling_frequency": 2.8210050621286475,
+          "rolling_shear": 0.055704121491087534,
+          "rolling_acceleration": -0.025704121491087535
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000009"
+    },
+    {
+      "iteration": 10,
+      "label": "restart_0_spsa_3_current",
+      "loss": 95.85675844449209,
+      "alpha_pre": 94.98647068226532,
+      "alpha_post": 95.59891954749858,
+      "metrics": {
+        "alpha_pre": 94.98647068226532,
+        "alpha_post": 95.59891954749858,
+        "psnr": 27.67822293775739,
+        "ssim": 0.8836619258380836,
+        "lpips": 0.04129479452967644
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000010"
+    },
+    {
+      "iteration": 11,
+      "label": "restart_0_spsa_4_plus",
+      "loss": 96.84634735247597,
+      "alpha_pre": 95.34470787661607,
+      "alpha_post": 96.79355238195615,
+      "metrics": {
+        "alpha_pre": 95.34470787661607,
+        "alpha_post": 96.79355238195615,
+        "psnr": 27.944854638842486,
+        "ssim": 0.878561732006449,
+        "lpips": 0.04627107456326485
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 9304.524351927983,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.0008345707776864208,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.055827146111567895,
+          "rolling_acceleration": -0.025827146111567896
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000011"
+    },
+    {
+      "iteration": 12,
+      "label": "restart_0_spsa_4_minus",
+      "loss": 159.18215732870627,
+      "alpha_pre": 90.89912315556492,
+      "alpha_post": 91.81140006675099,
+      "metrics": {
+        "alpha_pre": 90.89912315556492,
+        "alpha_post": 91.81140006675099,
+        "psnr": 22.208571787482676,
+        "ssim": 0.7812564342313126,
+        "lpips": 0.09868482500314713
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00558271461115679,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0008345707776864208,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.83457077768642
+        },
+        "rolling-shutter": {
+          "strength": 0.0008345707776864208,
+          "rolling_frequency": 2.8261310879819956,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000012"
+    },
+    {
+      "iteration": 13,
+      "label": "restart_0_spsa_4_current",
+      "loss": 97.93642573174067,
+      "alpha_pre": 95.37923823074762,
+      "alpha_post": 94.2849071985666,
+      "metrics": {
+        "alpha_pre": 95.37923823074762,
+        "alpha_post": 94.2849071985666,
+        "psnr": 26.65818383905561,
+        "ssim": 0.8579075802196945,
+        "lpips": 0.05880853533744812
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000013"
+    },
+    {
+      "iteration": 14,
+      "label": "restart_0_spsa_5_plus",
+      "loss": 112.89003511629444,
+      "alpha_pre": 91.70634264333897,
+      "alpha_post": 93.93445587408657,
+      "metrics": {
+        "alpha_pre": 91.70634264333897,
+        "alpha_post": 93.93445587408657,
+        "psnr": 24.92720239824639,
+        "ssim": 0.841572283995163,
+        "lpips": 0.0817725881934166
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0008159720119590083,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.011184027988040992,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0008159720119590083,
+          "rolling_frequency": 2.8300058308418734,
+          "rolling_shear": 0.004079860059795042,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000014"
+    },
+    {
+      "iteration": 15,
+      "label": "restart_0_spsa_5_minus",
+      "loss": 104.48711885345976,
+      "alpha_pre": 92.03173087057336,
+      "alpha_post": 92.86401986720068,
+      "metrics": {
+        "alpha_pre": 92.03173087057336,
+        "alpha_post": 92.86401986720068,
+        "psnr": 25.597687748108147,
+        "ssim": 0.8371547677246394,
+        "lpips": 0.18004631996154785
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005592013994020496,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 679.9766766325068,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.815972011959008
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.025920139940204957
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000015"
+    },
+    {
+      "iteration": 16,
+      "label": "restart_0_spsa_5_current",
+      "loss": 100.85631288394424,
+      "alpha_pre": 89.35072214024733,
+      "alpha_post": 88.82208721543002,
+      "metrics": {
+        "alpha_pre": 89.35072214024733,
+        "alpha_post": 88.82208721543002,
+        "psnr": 25.77804966094463,
+        "ssim": 0.853932963347876,
+        "lpips": 0.22959817945957184
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000016"
+    },
+    {
+      "iteration": 17,
+      "label": "restart_0_spsa_6_plus",
+      "loss": 95.8857646524768,
+      "alpha_pre": 94.90972737492974,
+      "alpha_post": 95.85314386593592,
+      "metrics": {
+        "alpha_pre": 94.90972737492974,
+        "alpha_post": 95.85314386593592,
+        "psnr": 28.05238964971619,
+        "ssim": 0.8722988666473226,
+        "lpips": 0.16835400462150574
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0004005419069084391,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 9332.4301551526,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 17.19891618618312
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 2.83310753878815,
+          "rolling_shear": 0.004005419069084391,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000017"
+    },
+    {
+      "iteration": 18,
+      "label": "restart_0_spsa_6_minus",
+      "loss": 2046.6252661864653,
+      "alpha_pre": 70.21309262577292,
+      "alpha_post": 67.20513079679596,
+      "metrics": {
+        "alpha_pre": 70.21309262577292,
+        "alpha_post": 67.20513079679596,
+        "psnr": 24.705187712414794,
+        "ssim": 0.8324460265839672,
+        "lpips": 0.32337602972984314
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0008010838138168782,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.011198916186183122,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0008010838138168782,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.025994580930915608
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000018"
+    },
+    {
+      "iteration": 19,
+      "label": "restart_0_spsa_6_current",
+      "loss": 208.60329167921105,
+      "alpha_pre": 85.42435047779652,
+      "alpha_post": 91.906100653457,
+      "metrics": {
+        "alpha_pre": 85.42435047779652,
+        "alpha_post": 91.906100653457,
+        "psnr": 25.55647236628414,
+        "ssim": 0.842876442334834,
+        "lpips": 0.06145312264561653
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000019"
+    },
+    {
+      "iteration": 20,
+      "label": "restart_0_spsa_7_plus",
+      "loss": 155.73786779822944,
+      "alpha_pre": 89.57893611228218,
+      "alpha_post": 83.04533057546374,
+      "metrics": {
+        "alpha_pre": 89.57893611228218,
+        "alpha_post": 83.04533057546374,
+        "psnr": 22.018140067280548,
+        "ssim": 0.7888561632967496,
+        "lpips": 0.12040042132139206
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005605645922792952,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0007887081544140964,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.788708154414096
+        },
+        "rolling-shutter": {
+          "strength": 0.0007887081544140964,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.05605645922792952,
+          "rolling_acceleration": -0.026056459227929516
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000020"
+    },
+    {
+      "iteration": 21,
+      "label": "restart_0_spsa_7_minus",
+      "loss": 102.914336433454,
+      "alpha_pre": 93.86977627880833,
+      "alpha_post": 95.77093887015175,
+      "metrics": {
+        "alpha_pre": 93.86977627880833,
+        "alpha_post": 95.77093887015175,
+        "psnr": 26.11714851972974,
+        "ssim": 0.854104680871897,
+        "lpips": 0.07487600296735764
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 657.2567953450803,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011211291845585903,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.6643141988362701,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000021"
+    },
+    {
+      "iteration": 22,
+      "label": "restart_0_spsa_7_current",
+      "loss": 95.54926444132309,
+      "alpha_pre": 93.51154600548061,
+      "alpha_post": 93.2165756569702,
+      "metrics": {
+        "alpha_pre": 93.51154600548061,
+        "alpha_post": 93.2165756569702,
+        "psnr": 26.9348613705738,
+        "ssim": 0.8543685873296343,
+        "lpips": 0.15631037950515747
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000022"
+    },
+    {
+      "iteration": 23,
+      "label": "restart_0_spsa_8_plus",
+      "loss": 237.51842716934365,
+      "alpha_pre": 87.22571270727937,
+      "alpha_post": 73.81375925730747,
+      "metrics": {
+        "alpha_pre": 87.22571270727937,
+        "alpha_post": 73.81375925730747,
+        "psnr": 20.099968445631173,
+        "ssim": 0.7610236524520726,
+        "lpips": 0.28138530254364014
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.778142515089897
+        },
+        "rolling-shutter": {
+          "strength": 0.0007781425150898968,
+          "rolling_frequency": 2.837886976022938,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000023"
+    },
+    {
+      "iteration": 24,
+      "label": "restart_0_spsa_8_minus",
+      "loss": 96.82930849473253,
+      "alpha_pre": 95.51872124437887,
+      "alpha_post": 96.78742381604835,
+      "metrics": {
+        "alpha_pre": 95.51872124437887,
+        "alpha_post": 96.78742381604835,
+        "psnr": 28.64319725405188,
+        "ssim": 0.8842015154395746,
+        "lpips": 0.1409149467945099
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005610928742455052,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0007781425150898968,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 9351.547904091753,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0007781425150898968,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.056109287424550514,
+          "rolling_acceleration": -0.026109287424550515
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000024"
+    },
+    {
+      "iteration": 25,
+      "label": "restart_0_spsa_8_current",
+      "loss": 116.82241853221998,
+      "alpha_pre": 89.58630076587971,
+      "alpha_post": 89.15847983417652,
+      "metrics": {
+        "alpha_pre": 89.58630076587971,
+        "alpha_post": 89.15847983417652,
+        "psnr": 24.34657363778479,
+        "ssim": 0.8257939282239279,
+        "lpips": 0.07679806649684906
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000025"
+    },
+    {
+      "iteration": 26,
+      "label": "restart_0_spsa_9_plus",
+      "loss": 358.6116803677696,
+      "alpha_pre": 83.39871156548622,
+      "alpha_post": 85.91837280424396,
+      "metrics": {
+        "alpha_pre": 83.39871156548622,
+        "alpha_post": 85.91837280424396,
+        "psnr": 22.77321981229708,
+        "ssim": 0.8071467918279701,
+        "lpips": 0.18366099894046783
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 640.7837556713879,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007689405068056654,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.003844702534028327,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000026"
+    },
+    {
+      "iteration": 27,
+      "label": "restart_0_spsa_9_minus",
+      "loss": 112.60766148038508,
+      "alpha_pre": 89.68074815556494,
+      "alpha_post": 90.98762009907252,
+      "metrics": {
+        "alpha_pre": 89.68074815556494,
+        "alpha_post": 90.98762009907252,
+        "psnr": 24.757909047765374,
+        "ssim": 0.8340074434242696,
+        "lpips": 0.0761847198009491
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0003844702534028327,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.011231059493194334,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011231059493194334,
+          "sigma": 6.768940506805666
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 2.839804061082153,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.026155297465971672
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000027"
+    },
+    {
+      "iteration": 28,
+      "label": "restart_0_spsa_9_current",
+      "loss": 98.18572421882804,
+      "alpha_pre": 98.40723166104553,
+      "alpha_post": 98.15004070053399,
+      "metrics": {
+        "alpha_pre": 98.40723166104553,
+        "alpha_post": 98.15004070053399,
+        "psnr": 28.91531379568395,
+        "ssim": 0.9068648340594031,
+        "lpips": 0.022848453372716904
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000028"
+    },
+    {
+      "iteration": 29,
+      "label": "restart_0_spsa_10_plus",
+      "loss": 1055.6863977829646,
+      "alpha_pre": 76.32522586424957,
+      "alpha_post": 68.8914290682968,
+      "metrics": {
+        "alpha_pre": 76.32522586424957,
+        "alpha_post": 68.8914290682968,
+        "psnr": 22.91334447340018,
+        "ssim": 0.8616635786481766,
+        "lpips": 0.3143249452114105
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005619599361369374,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 634.0010643843774,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0007608012772612529,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000029"
+    },
+    {
+      "iteration": 30,
+      "label": "restart_0_spsa_10_minus",
+      "loss": 118.99067457180374,
+      "alpha_pre": 93.17717908586285,
+      "alpha_post": 92.29628462268128,
+      "metrics": {
+        "alpha_pre": 93.17717908586285,
+        "alpha_post": 92.29628462268128,
+        "psnr": 24.35078820328326,
+        "ssim": 0.8459918459807648,
+        "lpips": 0.05354104936122894
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0007608012772612529,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 17.23919872273875
+        },
+        "rolling-shutter": {
+          "strength": 0.0007608012772612529,
+          "rolling_frequency": 0.6585002660960944,
+          "rolling_shear": 0.0038040063863062643,
+          "rolling_acceleration": -0.026195993613693735
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000030"
+    },
+    {
+      "iteration": 31,
+      "label": "restart_0_spsa_10_current",
+      "loss": 217.59387186444778,
+      "alpha_pre": 88.00506053260258,
+      "alpha_post": 78.05673805508712,
+      "metrics": {
+        "alpha_pre": 88.00506053260258,
+        "alpha_post": 78.05673805508712,
+        "psnr": 20.27683136771637,
+        "ssim": 0.7703319018529133,
+        "lpips": 0.11835464090108871
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000031"
+    },
+    {
+      "iteration": 32,
+      "label": "restart_0_spsa_11_plus",
+      "loss": 239.47379369623565,
+      "alpha_pre": 86.49444818015739,
+      "alpha_post": 80.07911790331647,
+      "metrics": {
+        "alpha_pre": 86.49444818015739,
+        "alpha_post": 80.07911790331647,
+        "psnr": 21.014716452934366,
+        "ssim": 0.7668055751741824,
+        "lpips": 0.17466841638088226
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005623243654028819,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 627.9272432853016,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.753512691942362
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000032"
+    },
+    {
+      "iteration": 33,
+      "label": "restart_0_spsa_11_minus",
+      "loss": 177.45492446603475,
+      "alpha_pre": 88.61104231661045,
+      "alpha_post": 82.38950607785273,
+      "metrics": {
+        "alpha_pre": 88.61104231661045,
+        "alpha_post": 82.38950607785273,
+        "psnr": 21.475399340896068,
+        "ssim": 0.7816840476081275,
+        "lpips": 0.10788004100322723
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.011246487308057638,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.000753512691942362,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.011246487308057638,
+          "rolling_frequency": 2.8430181891786743,
+          "rolling_shear": 0.056232436540288186,
+          "rolling_acceleration": 0.026232436540288187
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000033"
+    },
+    {
+      "iteration": 34,
+      "label": "restart_0_spsa_11_current",
+      "loss": 102.69549960775434,
+      "alpha_pre": 93.32114604412592,
+      "alpha_post": 95.03236412661607,
+      "metrics": {
+        "alpha_pre": 93.32114604412592,
+        "alpha_post": 95.03236412661607,
+        "psnr": 26.047247068330023,
+        "ssim": 0.8567321994972575,
+        "lpips": 0.05980047211050987
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000034"
+    },
+    {
+      "iteration": 35,
+      "label": "restart_0_spsa_12_plus",
+      "loss": 125.99176116897179,
+      "alpha_pre": 91.15064888982575,
+      "alpha_post": 86.78922586424957,
+      "metrics": {
+        "alpha_pre": 91.15064888982575,
+        "alpha_post": 86.78922586424957,
+        "psnr": 23.578396383296653,
+        "ssim": 0.8229526621102332,
+        "lpips": 0.12262208759784698
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005626540138746932,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0007469197225061367,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 622.4331020884472,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.011253080277493863,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007469197225061367,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000035"
+    },
+    {
+      "iteration": 36,
+      "label": "restart_0_spsa_12_minus",
+      "loss": 97.38178829174771,
+      "alpha_pre": 94.66727021852165,
+      "alpha_post": 95.64823817804947,
+      "metrics": {
+        "alpha_pre": 94.66727021852165,
+        "alpha_post": 95.64823817804947,
+        "psnr": 27.076703103194532,
+        "ssim": 0.8630549294411646,
+        "lpips": 0.057764507830142975
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.746919722506137
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.6556082755221118,
+          "rolling_shear": 0.0037345986125306833,
+          "rolling_acceleration": -0.026265401387469314
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000036"
+    },
+    {
+      "iteration": 37,
+      "label": "restart_0_spsa_12_current",
+      "loss": 116.57408956774577,
+      "alpha_pre": 90.45086669125914,
+      "alpha_post": 90.36318739460371,
+      "metrics": {
+        "alpha_pre": 90.45086669125914,
+        "alpha_post": 90.36318739460371,
+        "psnr": 24.38569859161312,
+        "ssim": 0.8391154236836194,
+        "lpips": 0.05194460228085518
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000037"
+    },
+    {
+      "iteration": 38,
+      "label": "restart_0_spsa_13_plus",
+      "loss": 323.72952841400775,
+      "alpha_pre": 84.50379625140528,
+      "alpha_post": 84.14067357012367,
+      "metrics": {
+        "alpha_pre": 84.50379625140528,
+        "alpha_post": 84.14067357012367,
+        "psnr": 21.358076735318843,
+        "ssim": 0.7741367458412401,
+        "lpips": 0.25873661041259766
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 617.4214429807472,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 17.259094268423105
+        },
+        "rolling-shutter": {
+          "strength": 0.0007409057315768966,
+          "rolling_frequency": 2.845644639254813,
+          "rolling_shear": 0.056295471342115516,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000038"
+    },
+    {
+      "iteration": 39,
+      "label": "restart_0_spsa_13_minus",
+      "loss": 95.93310876983918,
+      "alpha_pre": 93.1472970594435,
+      "alpha_post": 94.20869454398539,
+      "metrics": {
+        "alpha_pre": 93.1472970594435,
+        "alpha_post": 94.20869454398539,
+        "psnr": 27.08265970220621,
+        "ssim": 0.882269316429659,
+        "lpips": 0.05115783214569092
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005629547134211552,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0007409057315768966,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.011259094268423104,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.026295471342115517
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000039"
+    },
+    {
+      "iteration": 40,
+      "label": "restart_0_spsa_13_current",
+      "loss": 109.43876191328403,
+      "alpha_pre": 96.07487227726251,
+      "alpha_post": 94.37288399381674,
+      "metrics": {
+        "alpha_pre": 96.07487227726251,
+        "alpha_post": 94.37288399381674,
+        "psnr": 25.265407217890576,
+        "ssim": 0.8344457301556146,
+        "lpips": 0.04349541291594505
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000040"
+    },
+    {
+      "iteration": 41,
+      "label": "restart_0_spsa_14_plus",
+      "loss": 110.82953430397257,
+      "alpha_pre": 93.61917030283868,
+      "alpha_post": 89.03665667158515,
+      "metrics": {
+        "alpha_pre": 93.61917030283868,
+        "alpha_post": 89.03665667158515,
+        "psnr": 24.708576537117146,
+        "ssim": 0.8267842621369779,
+        "lpips": 0.11812283098697662
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 612.8173540985317,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 17.264619175081762
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.05632309587540881,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000041"
+    },
+    {
+      "iteration": 42,
+      "label": "restart_0_spsa_14_minus",
+      "loss": 144.0731060182592,
+      "alpha_pre": 91.75281905213605,
+      "alpha_post": 88.80708398327712,
+      "metrics": {
+        "alpha_pre": 91.75281905213605,
+        "alpha_post": 88.80708398327712,
+        "psnr": 22.7550109422428,
+        "ssim": 0.791832416962142,
+        "lpips": 0.10241818428039551
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00036769041245911905,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.011264619175081762,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0007353808249182381,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007353808249182381,
+          "rolling_frequency": 2.846795661475367,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.02632309587540881
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000042"
+    },
+    {
+      "iteration": 43,
+      "label": "restart_0_spsa_14_current",
+      "loss": 149.11984332158292,
+      "alpha_pre": 87.98032641231029,
+      "alpha_post": 91.790988371276,
+      "metrics": {
+        "alpha_pre": 87.98032641231029,
+        "alpha_post": 91.790988371276,
+        "psnr": 23.713690038824183,
+        "ssim": 0.8052664811551029,
+        "lpips": 0.25385019183158875
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000043"
+    },
+    {
+      "iteration": 44,
+      "label": "restart_0_spsa_15_plus",
+      "loss": 121.21269884779966,
+      "alpha_pre": 89.64955949620574,
+      "alpha_post": 84.91652185216414,
+      "metrics": {
+        "alpha_pre": 89.64955949620574,
+        "alpha_post": 84.91652185216414,
+        "psnr": 23.785297871277955,
+        "ssim": 0.813007093951042,
+        "lpips": 0.13188624382019043
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.011269725702073173,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0007302742979268265,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007302742979268265,
+          "rolling_frequency": 2.8478595212652444,
+          "rolling_shear": 0.0036513714896341323,
+          "rolling_acceleration": -0.026348628510365867
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000044"
+    },
+    {
+      "iteration": 45,
+      "label": "restart_0_spsa_15_minus",
+      "loss": 102.0194649715411,
+      "alpha_pre": 92.2856075217819,
+      "alpha_post": 92.19960190064643,
+      "metrics": {
+        "alpha_pre": 92.2856075217819,
+        "alpha_post": 92.19960190064643,
+        "psnr": 25.793177389643205,
+        "ssim": 0.8440575322165884,
+        "lpips": 0.12051945924758911
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00036513714896341324,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 9391.438085060978,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.730274297926827
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000045"
+    },
+    {
+      "iteration": 46,
+      "label": "restart_0_spsa_15_current",
+      "loss": 114.736804658558,
+      "alpha_pre": 92.1861090500281,
+      "alpha_post": 82.99871054665542,
+      "metrics": {
+        "alpha_pre": 92.1861090500281,
+        "alpha_post": 82.99871054665542,
+        "psnr": 24.02624586611294,
+        "ssim": 0.8186715346509615,
+        "lpips": 0.0750768631696701
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000046"
+    },
+    {
+      "iteration": 47,
+      "label": "restart_0_spsa_16_plus",
+      "loss": 120.63238018752952,
+      "alpha_pre": 92.51914778316468,
+      "alpha_post": 90.28749815556492,
+      "metrics": {
+        "alpha_pre": 92.51914778316468,
+        "alpha_post": 90.28749815556492,
+        "psnr": 24.113488399964883,
+        "ssim": 0.8243922809246508,
+        "lpips": 0.07303018122911453
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.01127447043440821,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 17.27447043440821
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 2.8488480071683773,
+          "rolling_shear": 0.003627647827958943,
+          "rolling_acceleration": -0.026372352172041057
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000047"
+    },
+    {
+      "iteration": 48,
+      "label": "restart_0_spsa_16_minus",
+      "loss": 116.7582475185977,
+      "alpha_pre": 92.89045383642497,
+      "alpha_post": 80.09783198074761,
+      "metrics": {
+        "alpha_pre": 92.89045383642497,
+        "alpha_post": 80.09783198074761,
+        "psnr": 23.727188929036423,
+        "ssim": 0.8205290906058366,
+        "lpips": 0.13671493530273438
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005637235217204105,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 604.6079713264905,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.0007255295655917887,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007255295655917887,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000048"
+    },
+    {
+      "iteration": 49,
+      "label": "restart_0_spsa_16_current",
+      "loss": 131.07305483271733,
+      "alpha_pre": 91.95892567804947,
+      "alpha_post": 90.56609622681282,
+      "metrics": {
+        "alpha_pre": 91.95892567804947,
+        "alpha_post": 90.56609622681282,
+        "psnr": 23.508807178731587,
+        "ssim": 0.8099041175164894,
+        "lpips": 0.12945368885993958
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.003826834029744667,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 10
+        },
+        "fft-phase": {
+          "strength": 3621.9432837588884,
+          "coefficients": 8
+        },
+        "elastic": {
+          "strength": 0.004346331940510666,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.004346331940510666,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000049"
+    },
+    {
+      "iteration": 50,
+      "label": "restart_0_spsa_17_plus",
+      "loss": 119.84773146202289,
+      "alpha_pre": 89.34157980255762,
+      "alpha_post": 88.08856026911187,
+      "metrics": {
+        "alpha_pre": 89.34157980255762,
+        "alpha_post": 88.08856026911187,
+        "psnr": 24.162241003794755,
+        "ssim": 0.8190888368745491,
+        "lpips": 0.23622499406337738
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0041873843588510675,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 9
+        },
+        "fft-phase": {
+          "strength": 3021.0260685815533,
+          "coefficients": 8
+        },
+        "elastic": {
+          "strength": 0.003625231282297864,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.003625231282297864,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.02639449670893599
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000050"
+    },
+    {
+      "iteration": 51,
+      "label": "restart_0_spsa_17_minus",
+      "loss": 125.09268760736227,
+      "alpha_pre": 92.24047530213603,
+      "alpha_post": 80.48751739038786,
+      "metrics": {
+        "alpha_pre": 92.24047530213603,
+        "alpha_post": 80.48751739038786,
+        "psnr": 23.285619325158567,
+        "ssim": 0.8118895901751628,
+        "lpips": 0.16653600335121155
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0034662837006382663,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0112788993417872,
+          "grid": 10
+        },
+        "fft-phase": {
+          "strength": 4222.860498936224,
+          "coefficients": 9
+        },
+        "elastic": {
+          "strength": 0.0050674325987234686,
+          "sigma": 17.2788993417872
+        },
+        "rolling-shutter": {
+          "strength": 0.0050674325987234686,
+          "rolling_frequency": 2.8497706962056664,
+          "rolling_shear": 0.003605503291064009,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000051"
+    },
+    {
+      "iteration": 52,
+      "label": "restart_0_spsa_17_current",
+      "loss": 116.37908439434361,
+      "alpha_pre": 94.99151222596964,
+      "alpha_post": 91.29397391441822,
+      "metrics": {
+        "alpha_pre": 94.99151222596964,
+        "alpha_post": 91.29397391441822,
+        "psnr": 24.466362548575855,
+        "ssim": 0.8290658645485335,
+        "lpips": 0.055088430643081665
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 7
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 7
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.0014589813215506384
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000052"
+    },
+    {
+      "iteration": 53,
+      "label": "restart_0_spsa_18_plus",
+      "loss": 119.88164483011226,
+      "alpha_pre": 93.63935190064643,
+      "alpha_post": 93.76173491076447,
+      "metrics": {
+        "alpha_pre": 93.63935190064643,
+        "alpha_post": 93.76173491076447,
+        "psnr": 24.39339670559232,
+        "ssim": 0.8305300060605854,
+        "lpips": 0.07018998265266418
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005641525131290254,
+          "grid": 7
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 7
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007169497374194916,
+          "rolling_frequency": 2.850635471370939,
+          "rolling_shear": 0.003584748687097458,
+          "rolling_acceleration": -0.005043730008648096
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000053"
+    },
+    {
+      "iteration": 54,
+      "label": "restart_0_spsa_18_minus",
+      "loss": 105.54117534445363,
+      "alpha_pre": 94.46523164347948,
+      "alpha_post": 91.42188898257449,
+      "metrics": {
+        "alpha_pre": 94.46523164347948,
+        "alpha_post": 91.42188898257449,
+        "psnr": 25.348894016776093,
+        "ssim": 0.8527869023632292,
+        "lpips": 0.08075592666864395
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 7
+        },
+        "delaunay": {
+          "strength": 0.011283050262580509,
+          "grid": 7
+        },
+        "fft-phase": {
+          "strength": 597.4581145162431,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0007169497374194916,
+          "sigma": 17.28305026258051
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.0021257673655468157
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000054"
+    },
+    {
+      "iteration": 55,
+      "label": "restart_0_spsa_18_current",
+      "loss": 99.2923857409341,
+      "alpha_pre": 93.20247433600339,
+      "alpha_post": 96.56870478499158,
+      "metrics": {
+        "alpha_pre": 93.20247433600339,
+        "alpha_post": 96.56870478499158,
+        "psnr": 26.842081507574665,
+        "ssim": 0.8595195047169448,
+        "lpips": 0.0756111592054367
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000055"
+    },
+    {
+      "iteration": 56,
+      "label": "restart_0_spsa_19_plus",
+      "loss": 124.53179065080312,
+      "alpha_pre": 91.45203586987073,
+      "alpha_post": 91.83531611860596,
+      "metrics": {
+        "alpha_pre": 91.45203586987073,
+        "alpha_post": 91.83531611860596,
+        "psnr": 23.963885427333402,
+        "ssim": 0.8205958401326169,
+        "lpips": 0.12168391793966293
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005643477351851014,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 9405.795586418357,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007130452962979732,
+          "rolling_frequency": 2.8514488966045892,
+          "rolling_shear": 0.0035652264814898652,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000056"
+    },
+    {
+      "iteration": 57,
+      "label": "restart_0_spsa_19_minus",
+      "loss": 100.99257257289918,
+      "alpha_pre": 92.50953342819,
+      "alpha_post": 93.30879017355257,
+      "metrics": {
+        "alpha_pre": 92.50953342819,
+        "alpha_post": 93.30879017355257,
+        "psnr": 26.04689628505101,
+        "ssim": 0.8485778833756004,
+        "lpips": 0.0771309956908226
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0007130452962979732,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011286954703702027,
+          "sigma": 6.713045296297973
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.02643477351851014
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000057"
+    },
+    {
+      "iteration": 58,
+      "label": "restart_0_spsa_19_current",
+      "loss": 123.5773220140107,
+      "alpha_pre": 91.56930932054524,
+      "alpha_post": 90.18742673201236,
+      "metrics": {
+        "alpha_pre": 91.56930932054524,
+        "alpha_post": 90.18742673201236,
+        "psnr": 23.924344748573727,
+        "ssim": 0.810966019344647,
+        "lpips": 0.18805117905139923
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000058"
+    },
+    {
+      "iteration": 59,
+      "label": "restart_0_spsa_20_plus",
+      "loss": 139.6994331069324,
+      "alpha_pre": 90.10734968732434,
+      "alpha_post": 87.14058133080383,
+      "metrics": {
+        "alpha_pre": 90.10734968732434,
+        "alpha_post": 87.14058133080383,
+        "psnr": 22.882118476400237,
+        "ssim": 0.8081135280753763,
+        "lpips": 0.1282421201467514
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.011290639170217727,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 9408.86597518144,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007093608297822742,
+          "rolling_frequency": 2.8522164937953596,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.02645319585108863
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000059"
+    },
+    {
+      "iteration": 60,
+      "label": "restart_0_spsa_20_minus",
+      "loss": 114.96299250089471,
+      "alpha_pre": 94.28936222948286,
+      "alpha_post": 88.20005823145024,
+      "metrics": {
+        "alpha_pre": 94.28936222948286,
+        "alpha_post": 88.20005823145024,
+        "psnr": 24.346878453121686,
+        "ssim": 0.8474146023761001,
+        "lpips": 0.21370720863342285
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0056453195851088635,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0007093608297822742,
+          "sigma": 17.290639170217727
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0035468041489113704,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000060"
+    },
+    {
+      "iteration": 61,
+      "label": "restart_0_spsa_20_current",
+      "loss": 121.56753818084034,
+      "alpha_pre": 93.46951919969084,
+      "alpha_post": 82.70107493676223,
+      "metrics": {
+        "alpha_pre": 93.46951919969084,
+        "alpha_post": 82.70107493676223,
+        "psnr": 23.600718216199084,
+        "ssim": 0.8123431295196717,
+        "lpips": 0.09210123121738434
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000061"
+    },
+    {
+      "iteration": 62,
+      "label": "restart_0_spsa_21_plus",
+      "loss": 165.85595755861888,
+      "alpha_pre": 88.81979929033164,
+      "alpha_post": 79.39464052838673,
+      "metrics": {
+        "alpha_pre": 88.81979929033164,
+        "alpha_post": 79.39464052838673,
+        "psnr": 21.708158950715138,
+        "ssim": 0.773933254696859,
+        "lpips": 0.1501384675502777
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.011294126164510098,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.000705873835489902,
+          "rolling_frequency": 2.852942950939604,
+          "rolling_shear": 0.05647063082255049,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000062"
+    },
+    {
+      "iteration": 63,
+      "label": "restart_0_spsa_21_minus",
+      "loss": 128.98944998416957,
+      "alpha_pre": 90.06890960511524,
+      "alpha_post": 95.50111254567172,
+      "metrics": {
+        "alpha_pre": 90.06890960511524,
+        "alpha_post": 95.50111254567172,
+        "psnr": 23.9171295788734,
+        "ssim": 0.8143963275923879,
+        "lpips": 0.07980887591838837
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.000352936917744951,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 9411.771803758415,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011294126164510098,
+          "sigma": 6.705873835489902
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.026470630822550488
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000063"
+    },
+    {
+      "iteration": 64,
+      "label": "restart_0_spsa_21_current",
+      "loss": 122.97922804810591,
+      "alpha_pre": 92.98209659569983,
+      "alpha_post": 87.7745451271782,
+      "metrics": {
+        "alpha_pre": 92.98209659569983,
+        "alpha_post": 87.7745451271782,
+        "psnr": 23.810316727036245,
+        "ssim": 0.8360820180880797,
+        "lpips": 0.06523803621530533
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000064"
+    },
+    {
+      "iteration": 65,
+      "label": "restart_0_spsa_22_plus",
+      "loss": 401.2718062978007,
+      "alpha_pre": 83.52169633572231,
+      "alpha_post": 86.19412136382799,
+      "metrics": {
+        "alpha_pre": 83.52169633572231,
+        "alpha_post": 86.19412136382799,
+        "psnr": 20.7608683117031,
+        "ssim": 0.7570164638661412,
+        "lpips": 0.28037524223327637
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0056487174743371504,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 585.4708761047485,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0007025650513256983,
+          "rolling_frequency": 2.853632280973813,
+          "rolling_shear": 0.056487174743371504,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000065"
+    },
+    {
+      "iteration": 66,
+      "label": "restart_0_spsa_22_minus",
+      "loss": 110.99082756291239,
+      "alpha_pre": 93.67038543423273,
+      "alpha_post": 92.63007924044406,
+      "metrics": {
+        "alpha_pre": 93.67038543423273,
+        "alpha_post": 92.63007924044406,
+        "psnr": 24.97525472096087,
+        "ssim": 0.8542039562379884,
+        "lpips": 0.058781955391168594
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.011297434948674301,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0007025650513256983,
+          "sigma": 17.2974349486743
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.026487174743371505
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000066"
+    },
+    {
+      "iteration": 67,
+      "label": "restart_0_spsa_22_current",
+      "loss": 101.1728557829622,
+      "alpha_pre": 92.78436781548623,
+      "alpha_post": 95.40746423552557,
+      "metrics": {
+        "alpha_pre": 92.78436781548623,
+        "alpha_post": 95.40746423552557,
+        "psnr": 26.310199940096105,
+        "ssim": 0.8595713163116393,
+        "lpips": 0.057646915316581726
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000067"
+    },
+    {
+      "iteration": 68,
+      "label": "restart_0_spsa_23_plus",
+      "loss": 247.20905897781765,
+      "alpha_pre": 84.48364855607083,
+      "alpha_post": 85.3404852093873,
+      "metrics": {
+        "alpha_pre": 84.48364855607083,
+        "alpha_post": 85.3404852093873,
+        "psnr": 25.806005203308295,
+        "ssim": 0.8356216189247162,
+        "lpips": 0.17164362967014313
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 582.8482214319996,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.011300582134281601,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.056502910671408,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000068"
+    },
+    {
+      "iteration": 69,
+      "label": "restart_0_spsa_23_minus",
+      "loss": 166.64570562744947,
+      "alpha_pre": 91.69254342327152,
+      "alpha_post": 90.980121363828,
+      "metrics": {
+        "alpha_pre": 91.69254342327152,
+        "alpha_post": 90.980121363828,
+        "psnr": 21.860762355848898,
+        "ssim": 0.7809459606381242,
+        "lpips": 0.12095196545124054
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005650291067140801,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0006994178657183996,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.6994178657184
+        },
+        "rolling-shutter": {
+          "strength": 0.0006994178657183996,
+          "rolling_frequency": 2.854287944642,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.026502910671408
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000069"
+    },
+    {
+      "iteration": 70,
+      "label": "restart_0_spsa_23_current",
+      "loss": 206.78189817642686,
+      "alpha_pre": 87.68867773327712,
+      "alpha_post": 78.00645315134908,
+      "metrics": {
+        "alpha_pre": 87.68867773327712,
+        "alpha_post": 78.00645315134908,
+        "psnr": 20.8687216205821,
+        "ssim": 0.7689350266397087,
+        "lpips": 0.12455563992261887
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000070"
+    },
+    {
+      "iteration": 71,
+      "label": "restart_0_spsa_24_plus",
+      "loss": 133.01437138214303,
+      "alpha_pre": 90.48954890387859,
+      "alpha_post": 89.32840900786958,
+      "metrics": {
+        "alpha_pre": 90.48954890387859,
+        "alpha_post": 89.32840900786958,
+        "psnr": 23.335882544623775,
+        "ssim": 0.8061233030644773,
+        "lpips": 0.09022003412246704
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.011303582144282131,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 17.30358214428213
+        },
+        "rolling-shutter": {
+          "strength": 0.011303582144282131,
+          "rolling_frequency": 0.6450870532745564,
+          "rolling_shear": 0.056517910721410644,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000071"
+    },
+    {
+      "iteration": 72,
+      "label": "restart_0_spsa_24_minus",
+      "loss": 264.8551016043181,
+      "alpha_pre": 85.787882992552,
+      "alpha_post": 85.99791715851602,
+      "metrics": {
+        "alpha_pre": 85.787882992552,
+        "alpha_post": 85.99791715851602,
+        "psnr": 21.298413978897123,
+        "ssim": 0.7737558693921335,
+        "lpips": 0.14591647684574127
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0003482089278589354,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 580.3482130982256,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011303582144282131,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.026517910721410645
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000072"
+    },
+    {
+      "iteration": 73,
+      "label": "restart_0_spsa_24_current",
+      "loss": 92.8207592850018,
+      "alpha_pre": 90.89069568577852,
+      "alpha_post": 92.78138016441821,
+      "metrics": {
+        "alpha_pre": 90.89069568577852,
+        "alpha_post": 92.78138016441821,
+        "psnr": 28.209823142820717,
+        "ssim": 0.8770542113739004,
+        "lpips": 0.039815276861190796
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000073"
+    },
+    {
+      "iteration": 74,
+      "label": "restart_0_spsa_25_plus",
+      "loss": 106.5184605710029,
+      "alpha_pre": 94.15175168634065,
+      "alpha_post": 94.3848239881956,
+      "metrics": {
+        "alpha_pre": 94.15175168634065,
+        "alpha_post": 94.3848239881956,
+        "psnr": 25.544518951615732,
+        "ssim": 0.839626931282098,
+        "lpips": 0.08839742839336395
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00034677621057314174,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0006935524211462835,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 577.9603509552362,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.693552421146284
+        },
+        "rolling-shutter": {
+          "strength": 0.0006935524211462835,
+          "rolling_frequency": 2.8555099122611907,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.026532237894268576
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000074"
+    },
+    {
+      "iteration": 75,
+      "label": "restart_0_spsa_25_minus",
+      "loss": 96.40907010641837,
+      "alpha_pre": 93.50860007377742,
+      "alpha_post": 96.29930169688029,
+      "metrics": {
+        "alpha_pre": 93.50860007377742,
+        "alpha_post": 96.29930169688029,
+        "psnr": 27.810615528298314,
+        "ssim": 0.8774920598050291,
+        "lpips": 0.04097023606300354
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011306447578853716,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0034677621057314176,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000075"
+    },
+    {
+      "iteration": 76,
+      "label": "restart_0_spsa_25_current",
+      "loss": 98.90220035236031,
+      "alpha_pre": 99.21146240865654,
+      "alpha_post": 98.85872777894886,
+      "metrics": {
+        "alpha_pre": 99.21146240865654,
+        "alpha_post": 98.85872777894886,
+        "psnr": 37.21771879599629,
+        "ssim": 0.979520055705069,
+        "lpips": 0.011904881335794926
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 11
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 13
+        },
+        "elastic": {
+          "strength": 0.0029307882824583602,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.045346058587708196,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000076"
+    },
+    {
+      "iteration": 77,
+      "label": "restart_0_spsa_26_plus",
+      "loss": 98.20684193146346,
+      "alpha_pre": 97.4051593767566,
+      "alpha_post": 98.16331589024732,
+      "metrics": {
+        "alpha_pre": 97.4051593767566,
+        "alpha_post": 98.16331589024732,
+        "psnr": 37.688713771608946,
+        "ssim": 0.9790883990217236,
+        "lpips": 0.09208857268095016
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 11
+        },
+        "fft-phase": {
+          "strength": 575.675409871578,
+          "coefficients": 12
+        },
+        "elastic": {
+          "strength": 0.0022399777906124663,
+          "sigma": 6.690810491845894
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 2.8560811475321057,
+          "rolling_shear": 0.04880011104693766,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000077"
+    },
+    {
+      "iteration": 78,
+      "label": "restart_0_spsa_26_minus",
+      "loss": 153.70687603963196,
+      "alpha_pre": 93.85298910905001,
+      "alpha_post": 92.20123236368747,
+      "metrics": {
+        "alpha_pre": 93.85298910905001,
+        "alpha_post": 92.20123236368747,
+        "psnr": 22.46358888604029,
+        "ssim": 0.7991806797868154,
+        "lpips": 0.07852315902709961
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00034540524592294685,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0006908104918458937,
+          "grid": 10
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 14
+        },
+        "elastic": {
+          "strength": 0.003621598774304254,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0006908104918458937,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.04189200612847873,
+          "rolling_acceleration": 0.026545947540770533
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000078"
+    },
+    {
+      "iteration": 79,
+      "label": "restart_0_spsa_26_current",
+      "loss": 99.95047681971992,
+      "alpha_pre": 99.99181975477796,
+      "alpha_post": 99.89818028035413,
+      "metrics": {
+        "alpha_pre": 99.99181975477796,
+        "alpha_post": 99.89818028035413,
+        "psnr": 55.662861183005575,
+        "ssim": 0.9990105157589113,
+        "lpips": 0.014178142882883549
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000079"
+    },
+    {
+      "iteration": 80,
+      "label": "restart_0_spsa_27_plus",
+      "loss": 99.87290412485241,
+      "alpha_pre": 99.89724715430017,
+      "alpha_post": 99.82342666174817,
+      "metrics": {
+        "alpha_pre": 99.89724715430017,
+        "alpha_post": 99.82342666174817,
+        "psnr": 47.65917272341191,
+        "ssim": 0.9968468541591712,
+        "lpips": 0.03367739915847778
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.0006881822912122325,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000080"
+    },
+    {
+      "iteration": 81,
+      "label": "restart_0_spsa_27_minus",
+      "loss": 172.57444400854075,
+      "alpha_pre": 92.01701039910061,
+      "alpha_post": 91.12976640668916,
+      "metrics": {
+        "alpha_pre": 92.01701039910061,
+        "alpha_post": 91.12976640668916,
+        "psnr": 21.629828224495128,
+        "ssim": 0.782188111198805,
+        "lpips": 0.0918690413236618
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00034409114560611623,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0006881822912122325,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 9426.51475732314,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 17.311817708787768
+        },
+        "rolling-shutter": {
+          "strength": 0.0006881822912122325,
+          "rolling_frequency": 0.6433713106692152,
+          "rolling_shear": 0.05655908854393884,
+          "rolling_acceleration": 0.02655908854393884
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000081"
+    },
+    {
+      "iteration": 82,
+      "label": "restart_0_spsa_27_current",
+      "loss": 95.26767820231653,
+      "alpha_pre": 93.36667279721755,
+      "alpha_post": 95.23625902894884,
+      "metrics": {
+        "alpha_pre": 93.36667279721755,
+        "alpha_post": 95.23625902894884,
+        "psnr": 29.45460864710391,
+        "ssim": 0.8885566723551522,
+        "lpips": 0.14739690721035004
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000082"
+    },
+    {
+      "iteration": 83,
+      "label": "restart_0_spsa_28_plus",
+      "loss": 97.30913861826954,
+      "alpha_pre": 97.02047683038224,
+      "alpha_post": 96.76476737282181,
+      "metrics": {
+        "alpha_pre": 97.02047683038224,
+        "alpha_post": 96.76476737282181,
+        "psnr": 27.493355272136352,
+        "ssim": 0.8685660892958786,
+        "lpips": 0.11361103504896164
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00034282957176926774,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 9428.617380384554,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 17.314340856461463
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.6428456549038616,
+          "rolling_shear": 0.056571704282307324,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000083"
+    },
+    {
+      "iteration": 84,
+      "label": "restart_0_spsa_28_minus",
+      "loss": 171.68525847545249,
+      "alpha_pre": 92.52182173974143,
+      "alpha_post": 89.44277689362002,
+      "metrics": {
+        "alpha_pre": 92.52182173974143,
+        "alpha_post": 89.44277689362002,
+        "psnr": 21.598568750185795,
+        "ssim": 0.7787862864670682,
+        "lpips": 0.12868426740169525
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0006856591435385355,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.011314340856461465,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0006856591435385355,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.026571704282307325
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000084"
+    },
+    {
+      "iteration": 85,
+      "label": "restart_0_spsa_28_current",
+      "loss": 98.0866242117723,
+      "alpha_pre": 93.8937095980888,
+      "alpha_post": 96.35581016371557,
+      "metrics": {
+        "alpha_pre": 93.8937095980888,
+        "alpha_post": 96.35581016371557,
+        "psnr": 27.07741343983503,
+        "ssim": 0.8656580923751603,
+        "lpips": 0.061516277492046356
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000085"
+    },
+    {
+      "iteration": 86,
+      "label": "restart_0_spsa_29_plus",
+      "loss": 122.64520145094414,
+      "alpha_pre": 88.49342471191682,
+      "alpha_post": 91.77297844645868,
+      "metrics": {
+        "alpha_pre": 88.49342471191682,
+        "alpha_post": 91.77297844645868,
+        "psnr": 24.882692347368,
+        "ssim": 0.8278498739846815,
+        "lpips": 0.16017290949821472
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 569.3610965020313,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.683233315802438
+        },
+        "rolling-shutter": {
+          "strength": 0.0006832333158024375,
+          "rolling_frequency": 2.857659725874492,
+          "rolling_shear": 0.0034161665790121876,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000086"
+    },
+    {
+      "iteration": 87,
+      "label": "restart_0_spsa_29_minus",
+      "loss": 100.90534688405499,
+      "alpha_pre": 93.02787568507588,
+      "alpha_post": 93.34553883853289,
+      "metrics": {
+        "alpha_pre": 93.02787568507588,
+        "alpha_post": 93.34553883853289,
+        "psnr": 26.06089424233542,
+        "ssim": 0.8535560155044367,
+        "lpips": 0.06523380428552628
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005658383342098781,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0006832333158024375,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.011316766684197562,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.02658383342098781
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000087"
+    },
+    {
+      "iteration": 88,
+      "label": "restart_0_spsa_29_current",
+      "loss": 106.78436451721555,
+      "alpha_pre": 93.77888856098933,
+      "alpha_post": 92.6415642039067,
+      "metrics": {
+        "alpha_pre": 93.77888856098933,
+        "alpha_post": 92.6415642039067,
+        "psnr": 25.347304180452745,
+        "ssim": 0.8509264440401858,
+        "lpips": 0.036744751036167145
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000088"
+    },
+    {
+      "iteration": 89,
+      "label": "restart_0_spsa_30_plus",
+      "loss": 130.8548299604898,
+      "alpha_pre": 88.70795569842608,
+      "alpha_post": 94.7508099177909,
+      "metrics": {
+        "alpha_pre": 88.70795569842608,
+        "alpha_post": 94.7508099177909,
+        "psnr": 24.28126430514743,
+        "ssim": 0.8335001060346316,
+        "lpips": 0.05258996784687042
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0006808978867791185,
+          "sigma": 6.6808978867791184
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.026595510566104406
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000089"
+    },
+    {
+      "iteration": 90,
+      "label": "restart_0_spsa_30_minus",
+      "loss": 124.98550811639585,
+      "alpha_pre": 90.05287120573357,
+      "alpha_post": 88.29980626405285,
+      "metrics": {
+        "alpha_pre": 90.05287120573357,
+        "alpha_post": 88.29980626405285,
+        "psnr": 23.72736687619913,
+        "ssim": 0.8076228794425734,
+        "lpips": 0.25757449865341187
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00034044894338955927,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.011319102113220882,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 567.4149056492654,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0006808978867791185,
+          "rolling_frequency": 2.8581462735876837,
+          "rolling_shear": 0.0034044894338955923,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000090"
+    },
+    {
+      "iteration": 91,
+      "label": "restart_0_spsa_30_current",
+      "loss": 291.81360789253546,
+      "alpha_pre": 84.11715802417089,
+      "alpha_post": 84.85047934232713,
+      "metrics": {
+        "alpha_pre": 84.11715802417089,
+        "alpha_post": 84.85047934232713,
+        "psnr": 23.89141726553654,
+        "ssim": 0.8064371988517741,
+        "lpips": 0.2060236632823944
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.002402883383557881,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.007194233232884238,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 4004.8056392631347,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.004805766767115762,
+          "rolling_frequency": 1.9987985901842162,
+          "rolling_shear": 0.024028833835578807,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000091"
+    },
+    {
+      "iteration": 92,
+      "label": "restart_0_spsa_31_plus",
+      "loss": 117.3972996949824,
+      "alpha_pre": 90.90502476812817,
+      "alpha_post": 89.87408103218101,
+      "metrics": {
+        "alpha_pre": 90.90502476812817,
+        "alpha_post": 89.87408103218101,
+        "psnr": 24.30130672365555,
+        "ssim": 0.8066036532149514,
+        "lpips": 0.161141037940979
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00274220670256802,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0065155865948639605,
+          "grid": 9
+        },
+        "fft-phase": {
+          "strength": 3439.2667742462368,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.004127120129095484,
+          "rolling_frequency": 2.140183306438441,
+          "rolling_shear": 0.02063560064547742,
+          "rolling_acceleration": -0.02660676680989861
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000092"
+    },
+    {
+      "iteration": 93,
+      "label": "restart_0_spsa_31_minus",
+      "loss": 116.73830260492574,
+      "alpha_pre": 90.52190651349073,
+      "alpha_post": 90.60375971402473,
+      "metrics": {
+        "alpha_pre": 90.52190651349073,
+        "alpha_post": 90.60375971402473,
+        "psnr": 24.39447549789417,
+        "ssim": 0.8137366838655913,
+        "lpips": 0.18407653272151947
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.002063560064547742,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.007872879870904516,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 4570.344504280033,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0006786466380202773,
+          "sigma": 6.678646638020277
+        },
+        "rolling-shutter": {
+          "strength": 0.00548441340513604,
+          "rolling_frequency": 1.8574138739299917,
+          "rolling_shear": 0.027422067025680195,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000093"
+    },
+    {
+      "iteration": 94,
+      "label": "restart_0_spsa_31_current",
+      "loss": 121.72626406137175,
+      "alpha_pre": 93.56256028667792,
+      "alpha_post": 91.48788900014054,
+      "metrics": {
+        "alpha_pre": 93.56256028667792,
+        "alpha_post": 91.48788900014054,
+        "psnr": 24.12031626880396,
+        "ssim": 0.814026703804894,
+        "lpips": 0.16079476475715637
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.002137487729800697,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.007725024540398606,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 4447.131728858441,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0005307913075143681,
+          "sigma": 6.530791307514368
+        },
+        "rolling-shutter": {
+          "strength": 0.00533655807463013,
+          "rolling_frequency": 1.8882170677853898,
+          "rolling_shear": 0.02668279037315065,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000094"
+    },
+    {
+      "iteration": 95,
+      "label": "restart_0_spsa_32_plus",
+      "loss": 129.72418879713925,
+      "alpha_pre": 93.47265610947161,
+      "alpha_post": 81.87768465430017,
+      "metrics": {
+        "alpha_pre": 93.47265610947161,
+        "alpha_post": 81.87768465430017,
+        "psnr": 23.120807970623684,
+        "ssim": 0.7891315418641333,
+        "lpips": 0.2366500049829483
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.001799250748566612,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.008401498502866775,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 5010.86003091525,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.00466008411216196,
+          "rolling_frequency": 2.0291491432995916,
+          "rolling_shear": 0.030065160185491498,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000095"
+    },
+    {
+      "iteration": 96,
+      "label": "restart_0_spsa_32_minus",
+      "loss": 115.57229811169498,
+      "alpha_pre": 93.52584587549185,
+      "alpha_post": 91.18223489319843,
+      "metrics": {
+        "alpha_pre": 93.52584587549185,
+        "alpha_post": 91.18223489319843,
+        "psnr": 24.51773326198182,
+        "ssim": 0.8125308216953401,
+        "lpips": 0.15734922885894775
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0024757247110347817,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.007048550577930437,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 3883.403426801634,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0012072652699825373,
+          "sigma": 7.207265269982537
+        },
+        "rolling-shutter": {
+          "strength": 0.0060130320370983,
+          "rolling_frequency": 1.7472849922711877,
+          "rolling_shear": 0.0233004205608098,
+          "rolling_acceleration": -0.026617630187659152
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000096"
+    },
+    {
+      "iteration": 97,
+      "label": "restart_0_spsa_32_current",
+      "loss": 115.42638276444535,
+      "alpha_pre": 92.85799806773468,
+      "alpha_post": 91.75019867200675,
+      "metrics": {
+        "alpha_pre": 92.85799806773468,
+        "alpha_post": 91.75019867200675,
+        "psnr": 24.566550686691073,
+        "ssim": 0.8318317175116755,
+        "lpips": 0.06632930040359497
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.011749602520481787,
+          "sigma": 17.749602520481787
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.0260940560648371
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000097"
+    },
+    {
+      "iteration": 98,
+      "label": "restart_0_spsa_33_plus",
+      "loss": 105.81476530242134,
+      "alpha_pre": 95.32854268549747,
+      "alpha_post": 96.2668167158516,
+      "metrics": {
+        "alpha_pre": 95.32854268549747,
+        "alpha_post": 96.2668167158516,
+        "psnr": 25.82685191439461,
+        "ssim": 0.8290181435056393,
+        "lpips": 0.17848965525627136
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005662812606301254,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 561.9789894979115,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 17.075227733084294
+        },
+        "rolling-shutter": {
+          "strength": 0.011325625212602507,
+          "rolling_frequency": 0.6404947473744779,
+          "rolling_shear": 0.0033718739369874686,
+          "rolling_acceleration": 0.029465930001824563
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000098"
+    },
+    {
+      "iteration": 99,
+      "label": "restart_0_spsa_33_minus",
+      "loss": 109.87078016551544,
+      "alpha_pre": 91.76660954187747,
+      "alpha_post": 80.77709856309724,
+      "metrics": {
+        "alpha_pre": 91.76660954187747,
+        "alpha_post": 80.77709856309724,
+        "psnr": 24.193511642741985,
+        "ssim": 0.8248970085873323,
+        "lpips": 0.07147464901208878
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0006743747873974937,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011075227733084295,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.022722182127849627
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000099"
+    },
+    {
+      "iteration": 100,
+      "label": "restart_0_spsa_33_current",
+      "loss": 223.04803425842906,
+      "alpha_pre": 85.75094013490725,
+      "alpha_post": 91.94785430719506,
+      "metrics": {
+        "alpha_pre": 85.75094013490725,
+        "alpha_post": 91.94785430719506,
+        "psnr": 23.490349180332075,
+        "ssim": 0.8087513388146345,
+        "lpips": 0.0915190652012825
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.004416906477118297,
+          "grid": 8
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 2638.489204802838,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 14.58341547471838
+        },
+        "rolling-shutter": {
+          "strength": 0.008833812954236594,
+          "rolling_frequency": 1.1596223012007094,
+          "rolling_shear": 0.01583093522881703,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000100"
+    },
+    {
+      "iteration": 101,
+      "label": "restart_0_spsa_34_plus",
+      "loss": 147.61076023805455,
+      "alpha_pre": 88.60610246275996,
+      "alpha_post": 86.2714895657673,
+      "metrics": {
+        "alpha_pre": 88.60610246275996,
+        "alpha_post": 86.2714895657673,
+        "psnr": 22.9283708452857,
+        "ssim": 0.8005812975164678,
+        "lpips": 0.1811506152153015
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0040807342225791365,
+          "grid": 8
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 3198.7762957014393,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011327655490921679,
+          "sigma": 15.255759983796702
+        },
+        "rolling-shutter": {
+          "strength": 0.008161468445158273,
+          "rolling_frequency": 1.2996940739253597,
+          "rolling_shear": 0.012469212683425419,
+          "rolling_acceleration": 0.026638277454608394
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000101"
+    },
+    {
+      "iteration": 102,
+      "label": "restart_0_spsa_34_minus",
+      "loss": 121.20442957666425,
+      "alpha_pre": 91.17605180227655,
+      "alpha_post": 93.04842817242832,
+      "metrics": {
+        "alpha_pre": 91.17605180227655,
+        "alpha_post": 93.04842817242832,
+        "psnr": 24.255640847915107,
+        "ssim": 0.8206989657315238,
+        "lpips": 0.09856311231851578
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.004753078731657458,
+          "grid": 8
+        },
+        "delaunay": {
+          "strength": 0.0006723445090783216,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 2078.2021139042367,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 13.911070965640059
+        },
+        "rolling-shutter": {
+          "strength": 0.009506157463314915,
+          "rolling_frequency": 1.019550528476059,
+          "rolling_shear": 0.019192657774208637,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000102"
+    },
+    {
+      "iteration": 103,
+      "label": "restart_0_spsa_34_current",
+      "loss": 2319.8306660002627,
+      "alpha_pre": 69.35447203485104,
+      "alpha_post": 82.3803983628443,
+      "metrics": {
+        "alpha_pre": 69.35447203485104,
+        "alpha_post": 82.3803983628443,
+        "psnr": 20.723156340996447,
+        "ssim": 0.7682785654760239,
+        "lpips": 0.14854294061660767
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000103"
+    },
+    {
+      "iteration": 104,
+      "label": "restart_0_spsa_35_plus",
+      "loss": 201.5798720789767,
+      "alpha_pre": 87.92135855817875,
+      "alpha_post": 83.96660444772344,
+      "metrics": {
+        "alpha_pre": 87.92135855817875,
+        "alpha_post": 83.96660444772344,
+        "psnr": 21.08421931717239,
+        "ssim": 0.7681163909094235,
+        "lpips": 0.13671185076236725
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.01132962106291068,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.01132962106291068,
+          "sigma": 6.670378937089319
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0566481053145534,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000104"
+    },
+    {
+      "iteration": 105,
+      "label": "restart_0_spsa_35_minus",
+      "loss": 163.59395440835732,
+      "alpha_pre": 88.35461173763349,
+      "alpha_post": 78.28466361017426,
+      "metrics": {
+        "alpha_pre": 88.35461173763349,
+        "alpha_post": 78.28466361017426,
+        "psnr": 22.02018468816361,
+        "ssim": 0.7872145264944731,
+        "lpips": 0.1580018699169159
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00566481053145534,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 558.6491142410994,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.01132962106291068,
+          "rolling_frequency": 0.6396622785602748,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.026648105314553402
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000105"
+    },
+    {
+      "iteration": 106,
+      "label": "restart_0_spsa_35_current",
+      "loss": 126.5990946592988,
+      "alpha_pre": 91.35112009907252,
+      "alpha_post": 83.2911842678471,
+      "metrics": {
+        "alpha_pre": 91.35112009907252,
+        "alpha_post": 83.2911842678471,
+        "psnr": 23.35728001401624,
+        "ssim": 0.8021433456926053,
+        "lpips": 0.2511999011039734
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000106"
+    },
+    {
+      "iteration": 107,
+      "label": "restart_0_spsa_36_plus",
+      "loss": 177.63133937916527,
+      "alpha_pre": 86.77130993535694,
+      "alpha_post": 85.26256281618888,
+      "metrics": {
+        "alpha_pre": 86.77130993535694,
+        "alpha_post": 85.26256281618888,
+        "psnr": 23.52495405691417,
+        "ssim": 0.8023988058911559,
+        "lpips": 0.17569775879383087
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00033423712331218477,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 9442.938127813026,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.66847424662437
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.05665762876687815,
+          "rolling_acceleration": -0.02665762876687815
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000107"
+    },
+    {
+      "iteration": 108,
+      "label": "restart_0_spsa_36_minus",
+      "loss": 935.6609942538754,
+      "alpha_pre": 77.67328462268128,
+      "alpha_post": 79.85983068086003,
+      "metrics": {
+        "alpha_pre": 77.67328462268128,
+        "alpha_post": 79.85983068086003,
+        "psnr": 21.081628153287095,
+        "ssim": 0.7720293343758468,
+        "lpips": 0.22564752399921417
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.011331525753375631,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.011331525753375631,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0006684742466243695,
+          "rolling_frequency": 2.8607345319532564,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000108"
+    },
+    {
+      "iteration": 109,
+      "label": "restart_0_spsa_36_current",
+      "loss": 123.30028426539994,
+      "alpha_pre": 92.0591950182687,
+      "alpha_post": 86.25507632448006,
+      "metrics": {
+        "alpha_pre": 92.0591950182687,
+        "alpha_post": 86.25507632448006,
+        "psnr": 23.704380560965888,
+        "ssim": 0.8214013154281955,
+        "lpips": 0.08640111237764359
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000109"
+    },
+    {
+      "iteration": 110,
+      "label": "restart_0_spsa_37_plus",
+      "loss": 156.98205768804542,
+      "alpha_pre": 89.64733637225969,
+      "alpha_post": 83.15363757729062,
+      "metrics": {
+        "alpha_pre": 89.64733637225969,
+        "alpha_post": 83.15363757729062,
+        "psnr": 21.959747429717535,
+        "ssim": 0.7928602387932928,
+        "lpips": 0.12308794260025024
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.01133337306254225,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 555.522447881458,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.01133337306254225,
+          "sigma": 17.33337306254225
+        },
+        "rolling-shutter": {
+          "strength": 0.0006666269374577496,
+          "rolling_frequency": 2.8611193880296355,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.02666686531271125
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000110"
+    },
+    {
+      "iteration": 111,
+      "label": "restart_0_spsa_37_minus",
+      "loss": 178.05262469248274,
+      "alpha_pre": 87.3172897519674,
+      "alpha_post": 88.51422026068016,
+      "metrics": {
+        "alpha_pre": 87.3172897519674,
+        "alpha_post": 88.51422026068016,
+        "psnr": 22.83495170847024,
+        "ssim": 0.8040534153091675,
+        "lpips": 0.10452692210674286
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005666686531271125,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.003333134687288748,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000111"
+    },
+    {
+      "iteration": 112,
+      "label": "restart_0_spsa_37_current",
+      "loss": 298.8796852671974,
+      "alpha_pre": 85.03973749297359,
+      "alpha_post": 80.15166561270377,
+      "metrics": {
+        "alpha_pre": 85.03973749297359,
+        "alpha_post": 80.15166561270377,
+        "psnr": 21.09309001756084,
+        "ssim": 0.7746492902034844,
+        "lpips": 0.18767651915550232
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000112"
+    },
+    {
+      "iteration": 113,
+      "label": "restart_0_spsa_38_plus",
+      "loss": 331.73013526670445,
+      "alpha_pre": 85.29426168142214,
+      "alpha_post": 72.90394029300168,
+      "metrics": {
+        "alpha_pre": 85.29426168142214,
+        "alpha_post": 72.90394029300168,
+        "psnr": 19.403703531369892,
+        "ssim": 0.771113488359109,
+        "lpips": 0.2773253917694092
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0006648337984855772,
+          "sigma": 6.664833798485577
+        },
+        "rolling-shutter": {
+          "strength": 0.011335166201514424,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.003324168992427886,
+          "rolling_acceleration": -0.026675831007572114
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000113"
+    },
+    {
+      "iteration": 114,
+      "label": "restart_0_spsa_38_minus",
+      "loss": 175.7889786125106,
+      "alpha_pre": 87.63901190978076,
+      "alpha_post": 88.98544199690838,
+      "metrics": {
+        "alpha_pre": 87.63901190978076,
+        "alpha_post": 88.98544199690838,
+        "psnr": 22.580298092603147,
+        "ssim": 0.7980089878213527,
+        "lpips": 0.17887692153453827
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005667583100757212,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0006648337984855772,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 9445.971834595353,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.638507041351162,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000114"
+    },
+    {
+      "iteration": 115,
+      "label": "restart_0_spsa_38_current",
+      "loss": 167.08650334279648,
+      "alpha_pre": 88.33422582911749,
+      "alpha_post": 89.72304965921865,
+      "metrics": {
+        "alpha_pre": 88.33422582911749,
+        "alpha_post": 89.72304965921865,
+        "psnr": 22.376683879068246,
+        "ssim": 0.7892415797205872,
+        "lpips": 0.08746418356895447
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000115"
+    },
+    {
+      "iteration": 116,
+      "label": "restart_0_spsa_39_plus",
+      "loss": 205.93965216351077,
+      "alpha_pre": 87.12960971753795,
+      "alpha_post": 78.25127828133783,
+      "metrics": {
+        "alpha_pre": 87.12960971753795,
+        "alpha_post": 78.25127828133783,
+        "psnr": 21.4340592785954,
+        "ssim": 0.7835477688080325,
+        "lpips": 0.16129691898822784
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.012,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 552.5765641338987,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0006630918769606785,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.011336908123039321,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.026684540615196605
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000116"
+    },
+    {
+      "iteration": 117,
+      "label": "restart_0_spsa_39_minus",
+      "loss": 179.16926044947473,
+      "alpha_pre": 86.88805531548623,
+      "alpha_post": 92.81486222948287,
+      "metrics": {
+        "alpha_pre": 86.88805531548623,
+        "alpha_post": 92.81486222948287,
+        "psnr": 23.654500781625288,
+        "ssim": 0.8080239184782063,
+        "lpips": 0.07061944901943207
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00033154593848033927,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.011336908123039321,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 6.663091876960679
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 2.8618558589665253,
+          "rolling_shear": 0.0033154593848033925,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000117"
+    },
+    {
+      "iteration": 118,
+      "label": "restart_0_spsa_39_current",
+      "loss": 201.9745167833183,
+      "alpha_pre": 91.98238158726812,
+      "alpha_post": 80.92646391933671,
+      "metrics": {
+        "alpha_pre": 91.98238158726812,
+        "alpha_post": 80.92646391933671,
+        "psnr": 20.233433430476868,
+        "ssim": 0.7589928954302742,
+        "lpips": 0.12338652461767197
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000118"
+    },
+    {
+      "iteration": 119,
+      "label": "restart_0_spsa_40_plus",
+      "loss": 166.83384160079683,
+      "alpha_pre": 90.78402020095558,
+      "alpha_post": 83.21547365092749,
+      "metrics": {
+        "alpha_pre": 90.78402020095558,
+        "alpha_post": 83.21547365092749,
+        "psnr": 21.545499707534873,
+        "ssim": 0.77875499807595,
+        "lpips": 0.11521901935338974
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0056693007741516945,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0006613984516966106,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.0006613984516966106,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000119"
+    },
+    {
+      "iteration": 120,
+      "label": "restart_0_spsa_40_minus",
+      "loss": 169.40053355146674,
+      "alpha_pre": 92.18243779862283,
+      "alpha_post": 76.46837378794267,
+      "metrics": {
+        "alpha_pre": 92.18243779862283,
+        "alpha_post": 76.46837378794267,
+        "psnr": 21.197820688906724,
+        "ssim": 0.7609116111329217,
+        "lpips": 0.1986573189496994
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 551.1653764138421,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 17.338601548303387
+        },
+        "rolling-shutter": {
+          "strength": 0.011338601548303389,
+          "rolling_frequency": 0.6377913441034605,
+          "rolling_shear": 0.05669300774151694,
+          "rolling_acceleration": -0.026693007741516946
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000120"
+    },
+    {
+      "iteration": 121,
+      "label": "restart_0_spsa_40_current",
+      "loss": 166.47117237678793,
+      "alpha_pre": 92.49264780073074,
+      "alpha_post": 81.20658923552558,
+      "metrics": {
+        "alpha_pre": 92.49264780073074,
+        "alpha_post": 81.20658923552558,
+        "psnr": 21.480125374370004,
+        "ssim": 0.7886281632409283,
+        "lpips": 0.12811781466007233
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005090245502868584,
+          "grid": 6
+        },
+        "delaunay": {
+          "strength": 0.0018195089942628327,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 14
+        },
+        "elastic": {
+          "strength": 0.0018195089942628327,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000121"
+    },
+    {
+      "iteration": 122,
+      "label": "restart_0_spsa_41_plus",
+      "loss": 164.57937976652,
+      "alpha_pre": 91.44641067664419,
+      "alpha_post": 78.17239340921866,
+      "metrics": {
+        "alpha_pre": 91.44641067664419,
+        "alpha_post": 78.17239340921866,
+        "psnr": 21.43956135580437,
+        "ssim": 0.7723617999838285,
+        "lpips": 0.10997305810451508
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0047603699980468565,
+          "grid": 6
+        },
+        "delaunay": {
+          "strength": 0.0011597579846193786,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 14
+        },
+        "elastic": {
+          "strength": 0.0011597579846193786,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.637448127009053,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": -0.026701244951782728
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000122"
+    },
+    {
+      "iteration": 123,
+      "label": "restart_0_spsa_41_minus",
+      "loss": 184.88750109009268,
+      "alpha_pre": 89.76169052136032,
+      "alpha_post": 78.75810409640248,
+      "metrics": {
+        "alpha_pre": 89.76169052136032,
+        "alpha_post": 78.75810409640248,
+        "psnr": 20.738058515087005,
+        "ssim": 0.7638310529434055,
+        "lpips": 0.28653571009635925
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005420121007690311,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.002479260003906287,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 549.7925080362116,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.002479260003906287,
+          "sigma": 17.340248990356546
+        },
+        "rolling-shutter": {
+          "strength": 0.011340248990356546,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.05670124495178273,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000123"
+    },
+    {
+      "iteration": 124,
+      "label": "restart_0_spsa_41_current",
+      "loss": 192.29772991672522,
+      "alpha_pre": 89.82054941329397,
+      "alpha_post": 86.10522964094997,
+      "metrics": {
+        "alpha_pre": 89.82054941329397,
+        "alpha_post": 86.10522964094997,
+        "psnr": 20.731365138809714,
+        "ssim": 0.770932931286933,
+        "lpips": 0.08999327570199966
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000124"
+    },
+    {
+      "iteration": 125,
+      "label": "restart_0_spsa_42_plus",
+      "loss": 190.40112646721673,
+      "alpha_pre": 90.24640105044969,
+      "alpha_post": 86.21367414980327,
+      "metrics": {
+        "alpha_pre": 90.24640105044969,
+        "alpha_post": 86.21367414980327,
+        "psnr": 20.79442280926724,
+        "ssim": 0.7736434703468472,
+        "lpips": 0.0920148491859436
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0003290736126700602,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.0006581472253401204,
+          "sigma": 17.34185277465988
+        },
+        "rolling-shutter": {
+          "strength": 0.011341852774659881,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000125"
+    },
+    {
+      "iteration": 126,
+      "label": "restart_0_spsa_42_minus",
+      "loss": 193.23027936252063,
+      "alpha_pre": 88.48197856942102,
+      "alpha_post": 84.52007448004497,
+      "metrics": {
+        "alpha_pre": 88.48197856942102,
+        "alpha_post": 84.52007448004497,
+        "psnr": 21.040239393671616,
+        "ssim": 0.7802187989323802,
+        "lpips": 0.16444431245326996
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0006581472253401204,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 548.4560211167669,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 2.8628859947208083,
+          "rolling_shear": 0.0567092638732994,
+          "rolling_acceleration": 0.026709263873299402
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000126"
+    },
+    {
+      "iteration": 127,
+      "label": "restart_0_spsa_42_current",
+      "loss": 184.5514886095352,
+      "alpha_pre": 90.57825987211916,
+      "alpha_post": 85.9976874297358,
+      "metrics": {
+        "alpha_pre": 90.57825987211916,
+        "alpha_post": 85.9976874297358,
+        "psnr": 20.99106897957252,
+        "ssim": 0.7806732294436882,
+        "lpips": 0.09736776351928711
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0009785680728631035,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 11
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.001957136145726207,
+          "sigma": 16.042863854273794
+        },
+        "rolling-shutter": {
+          "strength": 0.010042863854273793,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000127"
+    },
+    {
+      "iteration": 128,
+      "label": "restart_0_spsa_43_plus",
+      "loss": 183.60608676786111,
+      "alpha_pre": 91.79297923693085,
+      "alpha_post": 86.74218107082632,
+      "metrics": {
+        "alpha_pre": 91.79297923693085,
+        "alpha_post": 86.74218107082632,
+        "psnr": 21.05111038357327,
+        "ssim": 0.7832142489797796,
+        "lpips": 0.10915888100862503
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0006502756014478031,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0006565849428306009,
+          "grid": 11
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.002613721088556808,
+          "sigma": 16.699448797104395
+        },
+        "rolling-shutter": {
+          "strength": 0.010699448797104395,
+          "rolling_frequency": 3.0,
+          "rolling_shear": 0.06,
+          "rolling_acceleration": 0.026717075285847
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000128"
+    },
+    {
+      "iteration": 129,
+      "label": "restart_0_spsa_43_minus",
+      "loss": 179.7872456419193,
+      "alpha_pre": 90.9745750070264,
+      "alpha_post": 86.69018217748736,
+      "metrics": {
+        "alpha_pre": 90.9745750070264,
+        "alpha_post": 86.69018217748736,
+        "psnr": 21.187292194603774,
+        "ssim": 0.7866874727949993,
+        "lpips": 0.10612205415964127
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.001306860544278404,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 11
+        },
+        "fft-phase": {
+          "strength": 547.1541190255008,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.0013005512028956062,
+          "sigma": 15.386278911443194
+        },
+        "rolling-shutter": {
+          "strength": 0.009386278911443193,
+          "rolling_frequency": 2.863211470243625,
+          "rolling_shear": 0.056717075285847,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000129"
+    },
+    {
+      "iteration": 130,
+      "label": "restart_0_spsa_43_current",
+      "loss": 169.37150280057233,
+      "alpha_pre": 93.1329508326307,
+      "alpha_post": 91.63533284148397,
+      "metrics": {
+        "alpha_pre": 93.1329508326307,
+        "alpha_post": 91.63533284148397,
+        "psnr": 21.773927532559423,
+        "ssim": 0.7990129567221224,
+        "lpips": 0.10899356007575989
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0022839765024521017,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 2175.680715981664,
+          "coefficients": 7
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 13.432046995095797
+        },
+        "rolling-shutter": {
+          "strength": 0.007432046995095797,
+          "rolling_frequency": 2.456079821004584,
+          "rolling_shear": 0.04694591570411002,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000130"
+    },
+    {
+      "iteration": 131,
+      "label": "restart_0_spsa_44_plus",
+      "loss": 172.46253402135054,
+      "alpha_pre": 92.0459132588533,
+      "alpha_post": 90.50646527192242,
+      "metrics": {
+        "alpha_pre": 92.0459132588533,
+        "alpha_post": 90.50646527192242,
+        "psnr": 21.60707925139659,
+        "ssim": 0.7967298029681654,
+        "lpips": 0.11052785813808441
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0026115075823015424,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 1629.7955828992633,
+          "coefficients": 6
+        },
+        "elastic": {
+          "strength": 0.0,
+          "sigma": 14.087109154794678
+        },
+        "rolling-shutter": {
+          "strength": 0.0067769848353969155,
+          "rolling_frequency": 2.3196085377339837,
+          "rolling_shear": 0.050221226502604424,
+          "rolling_acceleration": 0.0267246892015056
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000131"
+    },
+    {
+      "iteration": 132,
+      "label": "restart_0_spsa_44_minus",
+      "loss": 171.37312408078085,
+      "alpha_pre": 92.17623534991567,
+      "alpha_post": 90.57320309865094,
+      "metrics": {
+        "alpha_pre": 92.17623534991567,
+        "alpha_post": 90.57320309865094,
+        "psnr": 21.65297483342598,
+        "ssim": 0.7930534411018563,
+        "lpips": 0.15326076745986938
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0019564454226026614,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0006550621596988806,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 2721.5658490640644,
+          "coefficients": 7
+        },
+        "elastic": {
+          "strength": 0.0006550621596988806,
+          "sigma": 12.776984835396917
+        },
+        "rolling-shutter": {
+          "strength": 0.008087109154794679,
+          "rolling_frequency": 2.5925511042751843,
+          "rolling_shear": 0.04367060490561561,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000132"
+    },
+    {
+      "iteration": 133,
+      "label": "restart_0_spsa_44_current",
+      "loss": 163.668944068968,
+      "alpha_pre": 93.84302387225969,
+      "alpha_post": 91.80727388982575,
+      "metrics": {
+        "alpha_pre": 93.84302387225969,
+        "alpha_post": 91.80727388982575,
+        "psnr": 22.013585225746066,
+        "ssim": 0.8035338525772633,
+        "lpips": 0.10935041308403015
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0019158440865225082,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.000736264831859187,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 2789.234742530986,
+          "coefficients": 7
+        },
+        "elastic": {
+          "strength": 0.000736264831859187,
+          "sigma": 12.695782163236611
+        },
+        "rolling-shutter": {
+          "strength": 0.008168311826954985,
+          "rolling_frequency": 2.6094683276419146,
+          "rolling_shear": 0.04326459154481408,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000133"
+    },
+    {
+      "iteration": 134,
+      "label": "restart_0_spsa_45_plus",
+      "loss": 162.19501864575648,
+      "alpha_pre": 92.69763564502529,
+      "alpha_post": 92.32154500421586,
+      "metrics": {
+        "alpha_pre": 92.69763564502529,
+        "alpha_post": 92.32154500421586,
+        "psnr": 22.095999057603066,
+        "ssim": 0.8105649509263477,
+        "lpips": 0.11585651338100433
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.002242632592988653,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.001389841844791477,
+          "grid": 11
+        },
+        "fft-phase": {
+          "strength": 2244.5872317540775,
+          "coefficients": 7
+        },
+        "elastic": {
+          "strength": 0.001389841844791477,
+          "sigma": 12.042205150304321
+        },
+        "rolling-shutter": {
+          "strength": 0.007514734814022694,
+          "rolling_frequency": 2.4733064499476876,
+          "rolling_shear": 0.04653247660947553,
+          "rolling_acceleration": 0.02673211493533855
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000134"
+    },
+    {
+      "iteration": 135,
+      "label": "restart_0_spsa_45_minus",
+      "loss": 162.15793737645248,
+      "alpha_pre": 91.33743820264193,
+      "alpha_post": 89.42979001545811,
+      "metrics": {
+        "alpha_pre": 91.33743820264193,
+        "alpha_post": 89.42979001545811,
+        "psnr": 21.97996088467235,
+        "ssim": 0.7897773697763911,
+        "lpips": 0.18488331139087677
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0015890555800563632,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 8.268781892689711e-05,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 3333.882253307894,
+          "coefficients": 8
+        },
+        "elastic": {
+          "strength": 8.268781892689711e-05,
+          "sigma": 13.3493591761689
+        },
+        "rolling-shutter": {
+          "strength": 0.008821888839887273,
+          "rolling_frequency": 2.7456302053361417,
+          "rolling_shear": 0.03999670648015263,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000135"
+    },
+    {
+      "iteration": 136,
+      "label": "restart_0_spsa_45_current",
+      "loss": 167.09387902451738,
+      "alpha_pre": 91.66216473440134,
+      "alpha_post": 91.45740672428332,
+      "metrics": {
+        "alpha_pre": 91.66216473440134,
+        "alpha_post": 91.45740672428332,
+        "psnr": 21.859278866606545,
+        "ssim": 0.7955401293412804,
+        "lpips": 0.1264188587665558
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.001903453905815376,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0007114844704449229,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 2809.88504370954,
+          "coefficients": 7
+        },
+        "elastic": {
+          "strength": 0.0007114844704449229,
+          "sigma": 12.720562524650873
+        },
+        "rolling-shutter": {
+          "strength": 0.008193092188369248,
+          "rolling_frequency": 2.614630902936553,
+          "rolling_shear": 0.043140689737742766,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000136"
+    },
+    {
+      "iteration": 137,
+      "label": "restart_0_spsa_46_plus",
+      "loss": 168.46440583375963,
+      "alpha_pre": 90.01680744097807,
+      "alpha_post": 88.29518456646993,
+      "metrics": {
+        "alpha_pre": 90.01680744097807,
+        "alpha_post": 88.29518456646993,
+        "psnr": 21.678674595343086,
+        "ssim": 0.7886204711907636,
+        "lpips": 0.1117800921201706
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.002229517788999539,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 5.935670407659599e-05,
+          "grid": 11
+        },
+        "fft-phase": {
+          "strength": 3353.3248490164783,
+          "coefficients": 7
+        },
+        "elastic": {
+          "strength": 5.935670407659599e-05,
+          "sigma": 13.3726902910192
+        },
+        "rolling-shutter": {
+          "strength": 0.008845219954737573,
+          "rolling_frequency": 2.7504908542632878,
+          "rolling_shear": 0.0464013285695844,
+          "rolling_acceleration": 0.026739361168158365
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000137"
+    },
+    {
+      "iteration": 138,
+      "label": "restart_0_spsa_46_minus",
+      "loss": 163.5070146671808,
+      "alpha_pre": 92.89885669617763,
+      "alpha_post": 92.76271490303542,
+      "metrics": {
+        "alpha_pre": 92.89885669617763,
+        "alpha_post": 92.76271490303542,
+        "psnr": 22.059743230963527,
+        "ssim": 0.8074429787593997,
+        "lpips": 0.11511266231536865
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0015773900226312126,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0013636122368132497,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 2266.445238402601,
+          "coefficients": 8
+        },
+        "elastic": {
+          "strength": 0.0013636122368132497,
+          "sigma": 12.068434758282548
+        },
+        "rolling-shutter": {
+          "strength": 0.007540964422000921,
+          "rolling_frequency": 2.4787709516098184,
+          "rolling_shear": 0.03988005090590113,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000138"
+    },
+    {
+      "iteration": 139,
+      "label": "restart_0_spsa_46_current",
+      "loss": 134.003722678902,
+      "alpha_pre": 90.88887951447443,
+      "alpha_post": 89.53965524873524,
+      "metrics": {
+        "alpha_pre": 90.88887951447443,
+        "alpha_post": 89.53965524873524,
+        "psnr": 23.29121911510086,
+        "ssim": 0.8217554717724341,
+        "lpips": 0.186849445104599
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00026515163576096046,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.003988089010553754,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 79.38126028551373,
+          "coefficients": 11
+        },
+        "elastic": {
+          "strength": 0.003988089010553754,
+          "sigma": 9.443957984542042
+        },
+        "rolling-shutter": {
+          "strength": 0.0049164876482604165,
+          "rolling_frequency": 1.9320049570805464,
+          "rolling_shear": 0.026757667037198608,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000139"
+    },
+    {
+      "iteration": 140,
+      "label": "restart_0_spsa_47_plus",
+      "loss": 130.85326922394222,
+      "alpha_pre": 91.16255742341204,
+      "alpha_post": 92.27366615725126,
+      "metrics": {
+        "alpha_pre": 91.16255742341204,
+        "alpha_post": 92.27366615725126,
+        "psnr": 23.612942841549895,
+        "ssim": 0.8322272530753825,
+        "lpips": 0.108499675989151
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0005905080355196422,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0046388018100711175,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 621.6419265499835,
+          "coefficients": 11
+        },
+        "elastic": {
+          "strength": 0.0046388018100711175,
+          "sigma": 10.094670784059407
+        },
+        "rolling-shutter": {
+          "strength": 0.00556720044777778,
+          "rolling_frequency": 1.796439790514429,
+          "rolling_shear": 0.02350410303961179,
+          "rolling_acceleration": 0.02674643600241318
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000140"
+    },
+    {
+      "iteration": 141,
+      "label": "restart_0_spsa_47_minus",
+      "loss": 140.33950213228707,
+      "alpha_pre": 92.45433075112422,
+      "alpha_post": 93.0220642390388,
+      "metrics": {
+        "alpha_pre": 92.45433075112422,
+        "alpha_post": 93.0220642390388,
+        "psnr": 23.141242526705973,
+        "ssim": 0.8282300818065739,
+        "lpips": 0.07141157984733582
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 9
+        },
+        "delaunay": {
+          "strength": 0.0033373762110363906,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 0.0,
+          "coefficients": 10
+        },
+        "elastic": {
+          "strength": 0.0033373762110363906,
+          "sigma": 8.793245185024679
+        },
+        "rolling-shutter": {
+          "strength": 0.004265774848743052,
+          "rolling_frequency": 2.0675701236466644,
+          "rolling_shear": 0.030011231034785427,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000141"
+    },
+    {
+      "iteration": 142,
+      "label": "restart_0_spsa_47_current",
+      "loss": 1436.1630558996758,
+      "alpha_pre": 74.01969839094997,
+      "alpha_post": 73.01878504426645,
+      "metrics": {
+        "alpha_pre": 74.01969839094997,
+        "alpha_post": 73.01878504426645,
+        "psnr": 21.44236110051257,
+        "ssim": 0.7787134037920217,
+        "lpips": 0.3247106671333313
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.00336653372620982,
+          "grid": 7
+        },
+        "delaunay": {
+          "strength": 0.010190853191451472,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 5248.351411033613,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.010190853191451472,
+          "sigma": 15.646722165439762
+        },
+        "rolling-shutter": {
+          "strength": 0.011119251829158135,
+          "rolling_frequency": 0.6397624193935219,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.0010138209044885937
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000142"
+    },
+    {
+      "iteration": 143,
+      "label": "restart_0_spsa_48_plus",
+      "loss": 137.3258110475819,
+      "alpha_pre": 92.10549899873524,
+      "alpha_post": 89.50764314572794,
+      "metrics": {
+        "alpha_pre": 92.10549899873524,
+        "alpha_post": 89.50764314572794,
+        "psnr": 23.118276621546933,
+        "ssim": 0.8057319688273338,
+        "lpips": 0.1863572597503662
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0036911990250021493,
+          "grid": 7
+        },
+        "delaunay": {
+          "strength": 0.009541522593866814,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 5789.460242354162,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.010840183789036131,
+          "sigma": 14.997391567855102
+        },
+        "rolling-shutter": {
+          "strength": 0.010469921231573476,
+          "rolling_frequency": 0.5044852115633847,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.004260473892411885
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000143"
+    },
+    {
+      "iteration": 144,
+      "label": "restart_0_spsa_48_minus",
+      "loss": 354.1661157407751,
+      "alpha_pre": 83.4271435673131,
+      "alpha_post": 83.18206754145587,
+      "metrics": {
+        "alpha_pre": 83.4271435673131,
+        "alpha_post": 83.18206754145587,
+        "psnr": 22.766707904124324,
+        "ssim": 0.7982480873420816,
+        "lpips": 0.30632099509239197
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0030418684274174904,
+          "grid": 7
+        },
+        "delaunay": {
+          "strength": 0.010840183789036131,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 4707.242579713064,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.009541522593866814,
+          "sigma": 16.29605276302442
+        },
+        "rolling-shutter": {
+          "strength": 0.011768582426742794,
+          "rolling_frequency": 0.7750396272236589,
+          "rolling_shear": 0.0032466529879232923,
+          "rolling_acceleration": 0.0022328320834347007
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000144"
+    },
+    {
+      "iteration": 145,
+      "label": "restart_0_spsa_48_current",
+      "loss": 98.08742583030623,
+      "alpha_pre": 95.47464073917932,
+      "alpha_post": 93.37889161748174,
+      "metrics": {
+        "alpha_pre": 95.47464073917932,
+        "alpha_post": 93.37889161748174,
+        "psnr": 26.470577202808585,
+        "ssim": 0.8510500199553598,
+        "lpips": 0.09908485412597656
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000145"
+    },
+    {
+      "iteration": 146,
+      "label": "restart_0_spsa_49_plus",
+      "loss": 130.69230660146232,
+      "alpha_pre": 87.7655139123103,
+      "alpha_post": 86.02785095207982,
+      "metrics": {
+        "alpha_pre": 87.7655139123103,
+        "alpha_post": 86.02785095207982,
+        "psnr": 24.866686545638146,
+        "ssim": 0.8327201776479182,
+        "lpips": 0.2580392360687256
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.006,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0006479797425409271,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 9460.016881215894,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.011352020257459072,
+          "sigma": 6.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0,
+          "rolling_frequency": 0.6349957796960265,
+          "rolling_shear": 0.0032398987127046355,
+          "rolling_acceleration": -0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000146"
+    },
+    {
+      "iteration": 147,
+      "label": "restart_0_spsa_49_minus",
+      "loss": 111.54069177837586,
+      "alpha_pre": 89.75061590078695,
+      "alpha_post": 90.64503031899943,
+      "metrics": {
+        "alpha_pre": 89.75061590078695,
+        "alpha_post": 90.64503031899943,
+        "psnr": 24.798138680637827,
+        "ssim": 0.8257952052886411,
+        "lpips": 0.19826999306678772
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.005676010128729536,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 6
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 15
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 6.647979742540927
+        },
+        "rolling-shutter": {
+          "strength": 0.0006479797425409271,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.026760101287295363
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000147"
+    },
+    {
+      "iteration": 148,
+      "label": "restart_0_spsa_49_current",
+      "loss": 93.54431655340916,
+      "alpha_pre": 94.07255255761663,
+      "alpha_post": 87.59623441891512,
+      "metrics": {
+        "alpha_pre": 94.07255255761663,
+        "alpha_post": 87.59623441891512,
+        "psnr": 26.283047249909785,
+        "ssim": 0.8507827748129134,
+        "lpips": 0.07162292301654816
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000148"
+    },
+    {
+      "iteration": 149,
+      "label": "restart_0_spsa_50_plus",
+      "loss": 108.95750410050313,
+      "alpha_pre": 93.33818637577289,
+      "alpha_post": 93.44613645306353,
+      "metrics": {
+        "alpha_pre": 93.33818637577289,
+        "alpha_post": 93.44613645306353,
+        "psnr": 25.22253580408772,
+        "ssim": 0.8335057182909839,
+        "lpips": 0.0667421743273735
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0003233294525561708,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0006466589051123416,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 9461.117579073049,
+          "coefficients": 5
+        },
+        "elastic": {
+          "strength": 0.011353341094887658,
+          "sigma": 18.0
+        },
+        "rolling-shutter": {
+          "strength": 0.012,
+          "rolling_frequency": 0.6347206052317378,
+          "rolling_shear": 0.0032332945255617073,
+          "rolling_acceleration": 0.03
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000149"
+    },
+    {
+      "iteration": 150,
+      "label": "restart_0_spsa_50_minus",
+      "loss": 96.4245856094017,
+      "alpha_pre": 96.33884401349071,
+      "alpha_post": 94.23689109050028,
+      "metrics": {
+        "alpha_pre": 96.33884401349071,
+        "alpha_post": 94.23689109050028,
+        "psnr": 26.963613290378152,
+        "ssim": 0.8585771564774728,
+        "lpips": 0.05668147653341293
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 12
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 17.353341094887657
+        },
+        "rolling-shutter": {
+          "strength": 0.011353341094887658,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": 0.02676670547443829
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000150"
+    },
+    {
+      "iteration": 151,
+      "label": "restart_0_spsa_50_current",
+      "loss": 104.807493778425,
+      "alpha_pre": 93.51541225758854,
+      "alpha_post": 95.30766408445756,
+      "metrics": {
+        "alpha_pre": 93.51541225758854,
+        "alpha_post": 95.30766408445756,
+        "psnr": 25.825482785155778,
+        "ssim": 0.8448211267412878,
+        "lpips": 0.05334557220339775
+      },
+      "parameters": {
+        "thin-plate-spline": {
+          "strength": 0.0,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 10000.0,
+          "coefficients": 4
+        },
+        "elastic": {
+          "strength": 0.012,
+          "sigma": 10.055240466612878
+        },
+        "rolling-shutter": {
+          "strength": 0.0040552404666128776,
+          "rolling_frequency": 0.5,
+          "rolling_shear": 0.0,
+          "rolling_acceleration": -0.00972379766693561
+        }
+      },
+      "path": "/home/interns/Desktop/work/fresh/output/loss_run_20260611_115708/iterations/iter_000151"
+    }
+  ]
+}
