@@ -1,319 +1,131 @@
-Create a new branch named loss2 from main.
+PART 2 PROMPT DOWN
+Create a new branch from the latest main, or continue from loss2 if loss2 has already been merged and is stable.
 
-Build a practical embedding-loss / anti-edit optimization pipeline on top of the existing geometric-v1 project.
+Build part 2 of the embedding-loss anti-edit pipeline: Flux transformer/internal feature loss.
 
-Do not implement Flux transformer hidden-state hooks in this phase. That is part 2. For this phase, focus on stable, practical signals:
-1. identity embeddings / identity distances
-2. VAE latent distances
-3. CLIP image embedding distances if practical
-4. output disruption metrics
-5. input stealth constraints
-
-Do not break existing CLI commands:
-python run_pipeline.py --config pipeline.json
-python run_brute_force.py --config brute.json
-python run_batch_brute_force.py --config batch_brute.json
-python run_loss_pipeline.py --config loss.json
-python -m geometric_v1.pipeline --config pipeline.json
-python -m geometric_v1.brute_force --config brute.json
-python -m geometric_v1.batch_brute_force --config batch_brute.json
-python -m geometric_v1.loss_pipeline --config loss.json
-
-Add:
-- geometric_v1/embedding_loss_pipeline.py
-- run_embedding_loss_pipeline.py
-- embedding_loss.json
-- sample_jsons/sample_embedding_loss.json
-- README documentation
-- embedding_loss_concepts.md or update concepts.md
+Important:
+- This is an advanced extension. Do not break the practical embedding_loss_pipeline from loss2.
+- Do not rewrite working VAE/CLIP/identity/output-disruption code.
+- Add Flux transformer feature hooks as optional, disabled-by-default objective terms.
+- If the hooks are unstable for the installed diffusers/Flux version, implement clean failure handling and document limitations instead of hacking fragile internals.
+- Existing CLI commands must keep working.
 
 Goal:
-Optimize geometric perturbation parameters so the input image still looks acceptable, but Flux either:
-1. changes identity after diffusion,
-2. fails to apply the edit cleanly,
-3. produces a meaningfully different or degraded output compared to clean original diffusion.
+Add objective terms that compare internal Flux image-conditioning / transformer hidden representations between:
+1. original input and perturbed input, if accessible before generation
+2. original diffusion run and perturbed diffusion run, if accessible during generation
 
-This is for deepfake prevention. Success does not have to mean only identity mismatch. A failed/garbled/unusable edit is also a useful outcome.
+The purpose is anti-edit/deepfake prevention:
+Make the input look normal, but disrupt Flux’s internal processing enough that the edit fails, degrades, changes structure, or changes identity.
 
-High-level pipeline:
-For one input image and one prompt:
-
-1. Load original image.
-2. Generate/cache original_diffused using the configured diffusion model.
-3. Cache original-side embeddings/latents:
-   - original input visual metrics baseline
-   - original face identity embeddings if enabled
-   - original_diffused face identity embeddings if enabled
-   - original VAE latent if enabled
-   - original_diffused VAE latent if enabled
-   - original CLIP image embedding if enabled and practical
-   - original_diffused CLIP image embedding if enabled and practical
-4. Optimize perturbation parameters.
-5. For each candidate:
-   - create perturbed.png using existing geometric perturbation code
-   - run same diffusion prompt to create perturbed_diffused.png
-   - compute input stealth metrics between original and perturbed
-   - compute pre-diffusion identity similarity/distance if enabled
-   - compute post-diffusion identity similarity/distance if enabled
-   - compute VAE latent distance for original vs perturbed if enabled
-   - compute VAE latent distance for original_diffused vs perturbed_diffused if enabled
-   - compute CLIP image distance if enabled and practical
-   - compute output disruption metrics between original_diffused and perturbed_diffused
-   - compute weighted loss
-   - save iteration metrics
-6. Save best result and final report.
-
-Output structure:
-output/embedding_loss_run_<timestamp>/
-  embedding_loss_config.json
-  original.png
-  original_diffused.png
-  best/
-    perturbed.png
-    perturbed_diffused.png
-    report.json
-  iterations/
-    iter_000001/
-      perturbed.png
-      perturbed_diffused.png
-      metrics.json
-  embedding_loss_history.json
-  report.json
-
-Config:
-Create embedding_loss.json with:
-
-- pipeline_config optional reference to pipeline.json
-- input
-- prompt
-- output_dir
-- seed
-- randomize_seed true/false
-- random_seed_range [1, 2147483647]
-- perturbations
-- diffusion block, supporting from_pipeline true
-- deepface or identity block, supporting from_pipeline true where practical
-- optimizer:
-  - type: spsa, random_search
-  - iterations
-  - learning_rate
-  - finite_difference_epsilon
-  - spsa_delta
-  - patience
-  - random_restarts
-  - save_every
-  - stop:
-    - loss_below
-    - post_identity_distance_above
-    - output_disruption_above
-- parameters:
-  - initialization fixed/random
-  - initial_values
-  - bounds for geometric fields
-- objective:
-  - input_stealth
-  - identity
-  - vae_latent
-  - clip_image
-  - output_disruption
-  - parameter_regularization
-
-Loss:
-Use a lower-is-better weighted objective.
-
-Example:
-
-loss =
-  + w_input_psnr * max(0, psnr_target - input_psnr)^2
-  + w_input_ssim * max(0, ssim_target - input_ssim)^2
-  + w_input_lpips * max(0, input_lpips - input_lpips_target)^2
-  + w_pre_identity * max(0, pre_identity_target - pre_identity_similarity)^2
-  - w_post_identity * post_identity_distance
-  - w_input_vae * input_vae_distance
-  - w_output_vae * output_vae_distance
-  - w_input_clip * input_clip_distance
-  - w_output_clip * output_clip_distance
-  - w_output_lpips * output_lpips
-  - w_output_l2 * output_l2
-  + w_regularization * parameter_distance
-
-Every term must be independently configurable and toggleable.
-
-Objective config shape should include true/false switches, for example:
+Add or extend config in embedding_loss.json:
 
 "objective": {
-  "input_stealth": {
-    "enabled": true,
-    "use_psnr": true,
-    "use_ssim": true,
-    "use_lpips": false,
-    "psnr": {"target": 28.0, "weight": 2.0},
-    "ssim": {"target": 0.88, "weight": 25.0},
-    "lpips": {"target": 0.25, "weight": 2.0}
-  },
-  "identity": {
-    "enabled": true,
-    "use_pre_identity": true,
-    "use_post_identity": true,
-    "pre_identity_target": 90.0,
-    "pre_identity_weight": 5.0,
-    "post_identity_weight": 1.0,
-    "models": {
-      "SFace": true,
-      "OpenFace": false,
-      "Facenet": true,
-      "Facenet512": true
-    },
-    "strict": false
-  },
-  "vae_latent": {
-    "enabled": true,
-    "use_input_vae": false,
-    "use_output_vae": true,
-    "input_weight": 0.0,
-    "output_weight": 1.0
-  },
-  "clip_image": {
+  "flux_transformer": {
     "enabled": false,
-    "use_input_clip": false,
-    "use_output_clip": true,
-    "input_weight": 0.0,
-    "output_weight": 1.0,
-    "model_id": "openai/clip-vit-base-patch32"
-  },
-  "output_disruption": {
-    "enabled": true,
-    "use_pixel_l2": true,
-    "use_ssim_drop": true,
-    "use_lpips": false,
-    "pixel_l2_weight": 1.0,
-    "ssim_drop_weight": 1.0,
-    "lpips_weight": 1.0
-  },
-  "parameter_regularization": {
-    "enabled": true,
-    "weight": 0.01
+    "strict": false,
+
+    "capture_mode": "forward_hook",
+    "compare": "original_vs_perturbed",
+
+    "use_input_features": false,
+    "use_denoising_features": true,
+
+    "layers": ["auto"],
+    "timesteps": ["early", "middle"],
+    "pooling": "mean",
+
+    "distance": "cosine",
+    "weight": 1.0,
+
+    "max_feature_elements": 262144,
+    "cache_original_features": true
   }
 }
 
-Identity embeddings:
-- Prefer direct embedding extraction where practical.
-- Keep only SFace, OpenFace, Facenet, Facenet512.
-- If direct embeddings are hard for all models, implement stable extraction for the models that work and document unsupported ones.
-- If direct embedding extraction is not practical for a model, fallback to DeepFace.verify distance for that model and clearly mark the metric source as "verify_distance".
-- Do not let one model error crash the run unless strict=true.
-- Failed identity model metrics should be recorded and excluded from averages.
-- Report per-model identity metrics.
+Design:
+- Keep this disabled by default.
+- If enabled, collect internal Flux features from the active diffusion model.
+- Cache original-side features once.
+- For each perturbed candidate, collect matching features and compute distance.
+- Add a loss term that rewards feature distance:
+  lower-is-better loss should subtract weighted feature distance:
+  loss -= w_flux_transformer * flux_transformer_feature_distance
 
-VAE latent distance:
-- Reuse the existing selected diffusion model/pipeline cache if possible.
-- Extract VAE latents from the active diffusion pipeline if accessible.
-- Compute normalized L2/cosine-style distance between latents.
-- Cache original and original_diffused latents once.
-- Do not reload the diffusion pipeline separately for VAE if the existing pipeline object can be reused.
-- If VAE extraction is not available for a model, record a clear error and skip that term unless strict=true.
+Feature capture options:
+Try stable approaches in this order:
 
-CLIP image distance:
-- Optional. Keep disabled by default.
-- Implement only if it does not create dependency chaos.
-- Cache CLIP model per process/device.
-- Cache original-side CLIP embeddings once.
-- Record model_id and device in reports.
-- If CLIP setup is problematic, leave the config field but document it as optional/future or disabled by default.
+1. Use documented diffusers output/callback mechanisms if available.
+2. Use PyTorch forward hooks on Flux transformer blocks.
+3. If neither is stable, expose a clear "not_available" metric and skip the term unless strict=true.
 
-Input stealth:
-- Reuse PSNR/SSIM/LPIPS helpers from loss_pipeline if sensible.
-- Cache LPIPS model instead of loading it every iteration.
-- LPIPS should be optional.
+Do not rely on brittle private attribute names without guarding them heavily.
 
-Output disruption:
-- Compare original_diffused vs perturbed_diffused.
-- Include simple metrics first:
-  - pixel L2 or MSE
-  - SSIM drop = 1 - SSIM
-  - LPIPS if enabled
-  - VAE latent distance if enabled through vae_latent
-  - CLIP distance if enabled through clip_image
+Implementation requirements:
+- Add a helper module if useful, e.g.
+  geometric_v1/flux_features.py
+- Cache feature extractor objects per process.
+- Use no_grad/inference_mode.
+- Avoid storing massive tensors in memory.
+- Pool features immediately:
+  - mean pooling by default
+  - optionally cls/token-like pooling if available
+- Move captured features to CPU after pooling.
+- Allow limiting which layers/timesteps are captured.
+- Ensure memory cleanup between iterations.
+- Do not decode or save intermediate diffusion images.
+- Capture features during the existing original_diffused and perturbed_diffused generation calls when possible; avoid adding extra full diffusion passes just for feature extraction.
 
-Optimization:
-- Reuse/adapt loss1 optimizer structure.
-- SPSA should still evaluate plus, minus, current per update step.
-- random_search should evaluate random candidates.
-- Deterministic when randomize_seed=false.
-- When randomize_seed=true, pick one random seed at run start and apply it to optimizer, perturbation seeds, diffusion seed, and any other seeded operations.
-- Save history every save_every evaluations.
+Supported feature distances:
+- cosine distance
+- normalized L2 distance
 
 Reports:
 Each iteration metrics.json should include:
-- iteration
-- label
-- loss
-- loss_components
-- raw metrics
-- parameters
-- normalized_parameters
-- perturbations with only method-relevant fields
-- diffusion used_model and used_model_id
-- embedding_backends used
-- errors per optional metric
-- outputs paths
-- elapsed_seconds
+- flux_transformer.enabled
+- available true/false
+- layers actually captured
+- timesteps actually captured if applicable
+- feature_shapes before pooling if cheap to record
+- pooled_feature_shapes
+- distance
+- errors/warnings
+- contribution to loss
 
-Final report.json should include:
-- status
-- config path
-- input
-- prompt
-- output_dir
-- configured_seed
-- actual seed
-- randomize_seed
-- random_seed_range
-- best_iteration
-- best_parameters
-- best_loss
-- best_metrics
-- optimizer config
-- objective config
-- diffusion model used
-- embedding backends used
-- evaluations
-- output paths
-- elapsed_seconds
+Final report should include:
+- whether Flux transformer features were enabled
+- whether they were actually available
+- selected layers/timesteps
+- capture method used
+- any limitations/errors
+- best flux feature distance
 
-Docs:
-README should explain:
-- what embedding loss means
-- why this differs from loss1
-- identity embedding vs VAE latent vs CLIP image embedding
-- input stealth vs output disruption
-- why output disruption is valid for deepfake prevention
-- how to run:
-  python run_embedding_loss_pipeline.py --config embedding_loss.json
-  python -m geometric_v1.embedding_loss_pipeline --config embedding_loss.json
-- which terms are enabled by default
-- which terms are optional
-- how to interpret reports
-
-Concepts doc should explain:
-- face identity embeddings
-- VAE latents
-- CLIP image embeddings
-- why changing model embeddings can be useful even if identity does not change
-- why visual stealth terms are needed
-- why this is still black-box with respect to Flux generation
+Documentation:
+Add README and concepts documentation explaining:
+- What Flux transformer/internal features are.
+- Difference between VAE latent loss and Flux transformer feature loss.
+- Why this may be more directly tied to how Flux edits images.
+- Why it is risky/experimental.
+- Memory risks on GPU.
+- Why it is disabled by default.
+- How to enable it.
+- How to interpret feature-distance metrics.
+- That changing Flux features does not guarantee visible failure, so it should be combined with output disruption and input stealth losses.
 
 Testing:
-Run lightweight checks:
-- python -m py_compile on changed Python files
-- python -m geometric_v1.embedding_loss_pipeline --help
-- load embedding_loss.json without running heavy diffusion if possible
-- run a tiny smoke test only if feasible:
-  - iterations = 1
-  - diffusion steps = 1
-  - max_size = 64
-  - expensive terms disabled
-- verify existing loss pipeline still imports:
-  python -m geometric_v1.loss_pipeline --help
+Do not run a huge optimization.
+Run:
+- syntax checks
+- import checks
+- --help checks
+- a tiny feature extraction dry run if feasible on one small image and 1 diffusion step
+- if no GPU/model available locally, test config parsing and make sure disabled mode works
 
-Commit changes cleanly and push branch loss2.
+Safety:
+- If Flux hooks break because of diffusers internals, the pipeline should not crash unless strict=true.
+- If enabled but unavailable, report:
+  "available": false,
+  "error": "...",
+  and continue with other loss terms when strict=false.
+
+Commit and push the branch when done.
